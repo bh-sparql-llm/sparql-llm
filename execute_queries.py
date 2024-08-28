@@ -16,7 +16,9 @@ def main(queries_file, output_folder):
         print(f'Running query {i}:', query['label'])
         result = requests.get(
             query['sparql_endpoint'],
-            params={'format': 'json', 'query': query['sparql_query']})
+            params={'format': 'json', 'query': query['sparql_query']},
+            timeout=300
+        )
         if result.status_code == 200:
             data = json.loads(result.text)
             query['result'] = data
