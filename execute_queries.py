@@ -14,20 +14,23 @@ def main(queries_file, output_folder):
         if output_file.exists():
             continue
         print(f'Running query {i}:', query['label'])
-        result = requests.get(
-            query['sparql_endpoint'],
-            params={'format': 'json', 'query': query['sparql_query']},
-            timeout=300
-        )
-        if result.status_code == 200:
-            data = json.loads(result.text)
-            query['result'] = data
-            query['n_results'] = len(data['results']['bindings'])
-        else:
-            query['error'] = f'Error with status code {result.status_code}'
-    
-        with open(output_file, 'w') as f:
-            f.write(json.dumps(query))
+        try:
+            result = requests.get(
+                query['sparql_endpoint'],
+                params={'format': 'json', 'query': query['sparql_query']},
+                timeout=60
+            )
+            if result.status_code == 200:
+                data = json.loads(result.text)
+                query['result'] = data
+                query['n_results'] = len(data['results']['bindings'])
+            else:
+                query['error'] = f'Error with status code {result.status_code}'
+
+            with open(output_file, 'w') as f:
+                f.write(json.dumps(query))
+        except Exception as e:
+            print(e)
 
 if __name__ == '__main__':
     main()
