@@ -1,0 +1,2973 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ex: <http://example.org/>
+PREFIX weso-s: <http://weso.es/shapes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+weso-s:Class
+{
+   rdf:type  [owl:Class]  ;                                    # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  +;          # 100.0 %
+            # 99.33333333333333 % obj: xsd:string. Cardinality: {1}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {2}
+   <http://www.w3.org/2000/01/rdf-schema#subClassOf>  IRI  *;
+            # 99.33333333333333 % obj: IRI. Cardinality: +
+            # 69.33333333333334 % obj: IRI. Cardinality: {1}
+            # 24.666666666666668 % obj: IRI. Cardinality: {2}
+            # 5.333333333333334 % obj: IRI. Cardinality: {3}
+            # 0.6666666666666667 % obj: @weso-s:Class. Cardinality: {1}
+   <http://purl.uniprot.org/core/name>  xsd:string  ?;
+            # 99.33333333333333 % obj: xsd:string. Cardinality: {1}
+   <http://www.geneontology.org/formats/oboInOwl#hasId>  xsd:integer  ?;
+            # 99.33333333333333 % obj: xsd:integer. Cardinality: {1}
+   <http://purl.obolibrary.org/obo/chebi/formula>  xsd:string  ?;
+            # 99.33333333333333 % obj: xsd:string. Cardinality: {1}
+   <http://www.geneontology.org/formats/oboInOwl#inSubset>  IRI  ?;
+            # 99.33333333333333 % obj: IRI. Cardinality: {1}
+   <http://purl.obolibrary.org/obo/chebi/charge>  xsd:integer  ?;
+            # 98.66666666666667 % obj: xsd:integer. Cardinality: {1}
+   <http://www.geneontology.org/formats/oboInOwl#hasSynonym>  xsd:string  *;
+            # 94.0 % obj: xsd:string. Cardinality: +
+            # 37.333333333333336 % obj: xsd:string. Cardinality: {1}
+            # 24.0 % obj: xsd:string. Cardinality: {2}
+            # 10.666666666666668 % obj: xsd:string. Cardinality: {3}
+            # 8.0 % obj: xsd:string. Cardinality: {5}
+            # 5.333333333333334 % obj: xsd:string. Cardinality: {4}
+            # 4.0 % obj: xsd:string. Cardinality: {6}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {12}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {15}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {8}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {16}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {7}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {9}
+   <http://purl.obolibrary.org/obo/IAO_0000115>  xsd:string  ?;
+            # 80.0 % obj: xsd:string. Cardinality: {1}
+   <http://www.geneontology.org/formats/oboInOwl#hasDbXref>  xsd:string  *;
+            # 70.0 % obj: xsd:string. Cardinality: +
+            # 34.0 % obj: xsd:string. Cardinality: {1}
+            # 10.0 % obj: xsd:string. Cardinality: {2}
+            # 8.666666666666668 % obj: xsd:string. Cardinality: {3}
+            # 4.0 % obj: xsd:string. Cardinality: {5}
+            # 4.0 % obj: xsd:string. Cardinality: {4}
+            # 2.0 % obj: xsd:string. Cardinality: {10}
+            # 2.0 % obj: xsd:string. Cardinality: {9}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {13}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {7}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {14}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {8}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {12}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {27}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {18}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {11}
+   <http://purl.obolibrary.org/obo/chebi/smiles>  rdf:langString  ?;
+            # 64.66666666666666 % obj: rdf:langString. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#subClassOf>  xsd:string  *;
+            # 57.333333333333336 % obj: xsd:string. Cardinality: +
+            # 40.666666666666664 % obj: xsd:string. Cardinality: {10}
+            # 11.333333333333332 % obj: xsd:string. Cardinality: {20}
+            # 2.666666666666667 % obj: xsd:string. Cardinality: {30}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {40}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {50}
+   <http://purl.obolibrary.org/obo/chebi/inchi>  xsd:string  ?;
+            # 56.666666666666664 % obj: xsd:string. Cardinality: {1}
+   <http://purl.obolibrary.org/obo/chebi/inchikey>  xsd:string  ?;
+            # 56.666666666666664 % obj: xsd:string. Cardinality: {1}
+   <http://purl.obolibrary.org/obo/chebi/smiles>  xsd:string  ?;
+            # 20.666666666666668 % obj: xsd:string. Cardinality: {1}
+   rdf:type  [owl:NamedIndividual]  ?;
+            # 0.6666666666666667 % obj: owl:NamedIndividual. Cardinality: {1}
+   rdf:type  [owl:Thing]  ?;
+            # 0.6666666666666667 % obj: owl:Thing. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Rank>]  ?;
+            # 0.6666666666666667 % obj: <http://purl.uniprot.org/core/Rank>. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  @weso-s:Ontology  ?
+            # 0.6666666666666667 % obj: @weso-s:Ontology. Cardinality: {1}
+}
+
+
+weso-s:Site_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Site_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Statement
+{
+   rdf:type  [rdf:Statement]  ;                                # 100.0 %
+   rdf:predicate  IRI  ;                                       # 100.0 %
+            # 57.333333333333336 % obj: @weso-s:ObjectProperty. Cardinality: {1}
+            # 10.666666666666668 % obj: @weso-s:DatatypeProperty. Cardinality: {1}
+   rdf:subject  IRI  ;                                         # 100.0 %
+            # 4.666666666666667 % obj: @weso-s:Catalytic_Activity_Annotation. Cardinality: {1}
+            # 4.666666666666667 % obj: @weso-s:Subunit_Annotation. Cardinality: {1}
+            # 4.0 % obj: @weso-s:Similarity_Annotation. Cardinality: {1}
+            # 2.666666666666667 % obj: @weso-s:Induction_Annotation. Cardinality: {1}
+            # 2.666666666666667 % obj: @weso-s:Tissue_Specificity_Annotation. Cardinality: {1}
+            # 2.0 % obj: @weso-s:Developmental_Stage_Annotation. Cardinality: {1}
+            # 1.3333333333333335 % obj: @weso-s:Cofactor_Annotation. Cardinality: {1}
+            # 1.3333333333333335 % obj: @weso-s:Function_Annotation. Cardinality: {1}
+            # 1.3333333333333335 % obj: @weso-s:Subcellular_Location_Annotation. Cardinality: {1}
+            # 1.3333333333333335 % obj: @weso-s:PTM_Annotation. Cardinality: {1}
+            # 0.6666666666666667 % obj: @weso-s:Domain_Annotation. Cardinality: {1}
+            # 0.6666666666666667 % obj: @weso-s:Statement. Cardinality: {1}
+            # 0.6666666666666667 % obj: @weso-s:Citation_Statement. Cardinality: {1}
+            # 0.6666666666666667 % obj: @weso-s:Biotechnology_Annotation. Cardinality: {1}
+   <http://purl.uniprot.org/core/attribution>  IRI  *;
+            # 60.66666666666667 % obj: IRI. Cardinality: +
+            # 52.0 % obj: IRI. Cardinality: {1}
+            # 6.0 % obj: IRI. Cardinality: {2}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {8}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {3}
+   rdf:object  IRI  ?;
+            # 53.333333333333336 % obj: IRI. Cardinality: {1}
+            # 6.0 % obj: @weso-s:Submission_Citation. Cardinality: {1}
+            # 1.3333333333333335 % obj: @weso-s:Cellular_Component. Cardinality: {1}
+   rdf:object  xsd:string  ?;
+            # 46.666666666666664 % obj: xsd:string. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Citation_Statement>]  ?;
+            # 44.666666666666664 % obj: <http://purl.uniprot.org/core/Citation_Statement>. Cardinality: {1}
+   <http://purl.uniprot.org/core/scope>  xsd:string  *;
+            # 44.666666666666664 % obj: xsd:string. Cardinality: +
+            # 30.0 % obj: xsd:string. Cardinality: {1}
+            # 7.333333333333333 % obj: xsd:string. Cardinality: {2}
+            # 3.3333333333333335 % obj: xsd:string. Cardinality: {4}
+            # 2.666666666666667 % obj: xsd:string. Cardinality: {3}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {5}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {7}
+   <http://purl.uniprot.org/core/context>  IRI  *
+            # 22.0 % obj: IRI. Cardinality: +
+            # 18.666666666666668 % obj: IRI. Cardinality: {1}
+            # 3.3333333333333335 % obj: IRI. Cardinality: {2}
+}
+
+
+weso-s:Helix_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Helix_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Alternative_Sequence_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Alternative_Sequence_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI  ;                # 100.0 %
+   <http://purl.uniprot.org/core/substitution>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Pharmaceutical_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Pharmaceutical_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/sequence>  IRI  ?
+            # 2.666666666666667 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Citation_Statement
+{
+   rdf:type  [rdf:Statement]  ;                                # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Citation_Statement>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/scope>  xsd:string  +;          # 100.0 %
+            # 69.33333333333334 % obj: xsd:string. Cardinality: {1}
+            # 14.000000000000002 % obj: xsd:string. Cardinality: {2}
+            # 5.333333333333334 % obj: xsd:string. Cardinality: {4}
+            # 4.0 % obj: xsd:string. Cardinality: {3}
+            # 4.0 % obj: xsd:string. Cardinality: {5}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {7}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {6}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {9}
+   rdf:object  IRI  ;                                          # 100.0 %
+            # 8.666666666666668 % obj: @weso-s:Submission_Citation. Cardinality: {1}
+            # 0.6666666666666667 % obj: @weso-s:Thesis_Citation. Cardinality: {1}
+   rdf:predicate  @weso-s:ObjectProperty  ;                    # 100.0 %
+   rdf:subject  IRI  ;                                         # 100.0 %
+   <http://purl.uniprot.org/core/context>  IRI  *;
+            # 54.666666666666664 % obj: IRI. Cardinality: +
+            # 46.666666666666664 % obj: IRI. Cardinality: {1}
+            # 8.0 % obj: IRI. Cardinality: {2}
+   <http://purl.uniprot.org/core/attribution>  IRI  *
+            # 10.0 % obj: IRI. Cardinality: +
+            # 8.666666666666668 % obj: IRI. Cardinality: {1}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {2}
+}
+
+
+weso-s:Concept
+{
+   rdf:type  [<http://purl.uniprot.org/core/Concept>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#subClassOf>  IRI  +;          # 100.0 %
+            # 39.33333333333333 % obj: IRI. Cardinality: {2}
+            # 20.666666666666668 % obj: IRI. Cardinality: {4}
+            # 13.333333333333334 % obj: IRI. Cardinality: {3}
+            # 11.333333333333332 % obj: IRI. Cardinality: {6}
+            # 8.666666666666668 % obj: IRI. Cardinality: {5}
+            # 6.0 % obj: IRI. Cardinality: {7}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {9}
+            # 30.666666666666664 % obj: @weso-s:Concept. Cardinality: +
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/category>  IRI  ;             # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  *;
+            # 71.33333333333334 % obj: IRI. Cardinality: +
+            # 68.66666666666667 % obj: IRI. Cardinality: {1}
+            # 2.666666666666667 % obj: IRI. Cardinality: {2}
+   <http://www.w3.org/2004/02/skos/core#altLabel>  xsd:string  *;
+            # 40.666666666666664 % obj: xsd:string. Cardinality: +
+            # 15.333333333333332 % obj: xsd:string. Cardinality: {2}
+            # 10.0 % obj: xsd:string. Cardinality: {1}
+            # 6.666666666666667 % obj: xsd:string. Cardinality: {3}
+            # 4.0 % obj: xsd:string. Cardinality: {4}
+            # 2.666666666666667 % obj: xsd:string. Cardinality: {5}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {6}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {11}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {9}
+   <http://www.w3.org/2004/02/skos/core#narrower>  IRI  *
+            # 14.000000000000002 % obj: IRI. Cardinality: +
+            # 5.333333333333334 % obj: IRI. Cardinality: {1}
+            # 2.0 % obj: IRI. Cardinality: {4}
+            # 2.0 % obj: IRI. Cardinality: {2}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {3}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {9}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {5}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {8}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {6}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {7}
+            # 10.0 % obj: @weso-s:Concept. Cardinality: +
+}
+
+
+weso-s:Modified_Residue_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Modified_Residue_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Genomic_RNA
+{
+   rdf:type  [<http://purl.uniprot.org/core/Genomic_RNA>]  ;          # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Viral_cRNA>]  ?;
+            # 10.666666666666668 % obj: <http://purl.uniprot.org/core/Viral_cRNA>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Other_RNA>]  ?;
+            # 4.0 % obj: <http://purl.uniprot.org/core/Other_RNA>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Unassigned_DNA>]  ?;
+            # 0.6666666666666667 % obj: <http://purl.uniprot.org/core/Unassigned_DNA>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Unassigned_RNA>]  ?
+            # 0.6666666666666667 % obj: <http://purl.uniprot.org/core/Unassigned_RNA>. Cardinality: {1}
+}
+
+
+weso-s:Alternative_Initiation_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Alternative_Initiation_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/sequence>  IRI  +;            # 100.0 %
+            # 71.33333333333334 % obj: IRI. Cardinality: {2}
+            # 11.333333333333332 % obj: IRI. Cardinality: {5}
+            # 10.666666666666668 % obj: IRI. Cardinality: {3}
+            # 4.666666666666667 % obj: IRI. Cardinality: {4}
+            # 2.0 % obj: IRI. Cardinality: {7}
+            # 6.666666666666667 % obj: @weso-s:External_Sequence. Cardinality: +
+            # 2.666666666666667 % obj: @weso-s:Simple_Sequence. Cardinality: {1}
+            # 2.666666666666667 % obj: @weso-s:Modified_Sequence. Cardinality: {1}
+            # 2.0 % obj: @weso-s:Unknown_Sequence. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Alternative_Splicing_Annotation>]  ?;
+            # 11.333333333333332 % obj: <http://purl.uniprot.org/core/Alternative_Splicing_Annotation>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Alternative_Promoter_Usage_Annotation>]  ?;
+            # 2.666666666666667 % obj: <http://purl.uniprot.org/core/Alternative_Promoter_Usage_Annotation>. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:RNA_Editing_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/RNA_Editing_Annotation>]  ;          # 100.0 %
+   <http://biohackathon.org/resource/faldo#location>  IRI  *;
+            # 92.0 % obj: IRI. Cardinality: +
+            # 57.99999999999999 % obj: IRI. Cardinality: {1}
+            # 4.666666666666667 % obj: IRI. Cardinality: {4}
+            # 4.0 % obj: IRI. Cardinality: {7}
+            # 3.3333333333333335 % obj: IRI. Cardinality: {3}
+            # 2.666666666666667 % obj: IRI. Cardinality: {9}
+            # 2.666666666666667 % obj: IRI. Cardinality: {12}
+            # 2.666666666666667 % obj: IRI. Cardinality: {25}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {6}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {14}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {11}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {13}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {18}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {8}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {19}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {21}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {30}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {15}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {5}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {28}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {26}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {16}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 77.33333333333333 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/frameshift>  xsd:string  ?
+            # 5.333333333333334 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Disease
+{
+   rdf:type  [<http://purl.uniprot.org/core/Disease>]  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  +;          # 100.0 %
+            # 45.33333333333333 % obj: IRI. Cardinality: {4}
+            # 28.000000000000004 % obj: IRI. Cardinality: {5}
+            # 10.0 % obj: IRI. Cardinality: {3}
+            # 7.333333333333333 % obj: IRI. Cardinality: {6}
+            # 6.666666666666667 % obj: IRI. Cardinality: {7}
+            # 2.666666666666667 % obj: IRI. Cardinality: {8}
+            # 6.666666666666667 % obj: @weso-s:Concept. Cardinality: {1}
+   <http://purl.uniprot.org/core/mnemonic>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#altLabel>  xsd:string  *
+            # 71.33333333333334 % obj: xsd:string. Cardinality: +
+            # 15.333333333333332 % obj: xsd:string. Cardinality: {3}
+            # 13.333333333333334 % obj: xsd:string. Cardinality: {2}
+            # 12.666666666666668 % obj: xsd:string. Cardinality: {4}
+            # 6.0 % obj: xsd:string. Cardinality: {7}
+            # 6.0 % obj: xsd:string. Cardinality: {5}
+            # 4.666666666666667 % obj: xsd:string. Cardinality: {10}
+            # 3.3333333333333335 % obj: xsd:string. Cardinality: {6}
+            # 2.666666666666667 % obj: xsd:string. Cardinality: {9}
+            # 2.666666666666667 % obj: xsd:string. Cardinality: {1}
+            # 2.0 % obj: xsd:string. Cardinality: {8}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {16}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {13}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {18}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {15}
+}
+
+
+weso-s:Polymorphism_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Polymorphism_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/sequence>  IRI  ?
+            # 2.0 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Ribosomal_Frameshifting
+{
+   rdf:type  [<http://purl.uniprot.org/core/Ribosomal_Frameshifting>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/sequence>  IRI  +;            # 100.0 %
+            # 88.66666666666667 % obj: IRI. Cardinality: {2}
+            # 10.0 % obj: IRI. Cardinality: {3}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {1}
+            # 18.666666666666668 % obj: @weso-s:External_Sequence. Cardinality: +
+            # 11.333333333333332 % obj: @weso-s:Simple_Sequence. Cardinality: +
+            # 2.0 % obj: @weso-s:Unknown_Sequence. Cardinality: +
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 38.0 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Non-standard_Residue_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Non-standard_Residue_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Journal
+{
+   rdf:type  [<http://purl.org/ontology/bibo/Journal>]  ;          # 100.0 %
+   <http://purl.org/dc/terms/publisher>  xsd:string  ;          # 100.0 %
+   <http://purl.org/ontology/bibo/shortTitle>  xsd:string  ;          # 100.0 %
+   <http://purl.org/ontology/bibo/title>  xsd:string  ;          # 100.0 %
+   <http://purl.org/ontology/bibo/issn>  xsd:string  ?;
+            # 98.0 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2004/02/skos/core#closeMatch>  IRI  ?;
+            # 98.0 % obj: IRI. Cardinality: {1}
+   <http://purl.org/ontology/bibo/coden>  xsd:string  ?;
+            # 92.0 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  ?;
+            # 78.66666666666666 % obj: IRI. Cardinality: {1}
+   <http://purl.org/ontology/bibo/eissn>  xsd:string  ?;
+            # 73.33333333333333 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2004/02/skos/core#exactMatch>  IRI  ?;
+            # 73.33333333333333 % obj: IRI. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 36.666666666666664 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/shortCoden>  xsd:string  ?
+            # 23.333333333333332 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:STATO_0000193
+{
+   rdf:type  [<http://purl.obolibrary.org/obo/STATO_0000193>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:integer  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Alternative_Splicing_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Alternative_Splicing_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/sequence>  IRI  +;            # 100.0 %
+            # 43.333333333333336 % obj: IRI. Cardinality: {2}
+            # 20.0 % obj: IRI. Cardinality: {3}
+            # 10.666666666666668 % obj: IRI. Cardinality: {1}
+            # 8.0 % obj: IRI. Cardinality: {4}
+            # 7.333333333333333 % obj: IRI. Cardinality: {5}
+            # 4.666666666666667 % obj: IRI. Cardinality: {7}
+            # 2.666666666666667 % obj: IRI. Cardinality: {6}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {10}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {15}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {9}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {11}
+            # 7.333333333333333 % obj: @weso-s:External_Sequence. Cardinality: +
+            # 4.666666666666667 % obj: @weso-s:Unknown_Sequence. Cardinality: +
+            # 2.0 % obj: @weso-s:Modified_Sequence. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Alternative_Promoter_Usage_Annotation>]  ?;
+            # 25.333333333333336 % obj: <http://purl.uniprot.org/core/Alternative_Promoter_Usage_Annotation>. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 17.333333333333336 % obj: xsd:string. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Alternative_Initiation_Annotation>]  ?
+            # 9.333333333333334 % obj: <http://purl.uniprot.org/core/Alternative_Initiation_Annotation>. Cardinality: {1}
+}
+
+
+weso-s:Erroneous_Translation_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Erroneous_Translation_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/conflictingSequence>  IRI  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 93.33333333333333 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Biotechnology_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Biotechnology_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/sequence>  IRI  ?
+            # 2.666666666666667 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Propeptide_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Propeptide_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI  ;                # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 28.666666666666668 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Transmembrane_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Transmembrane_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Other_DNA
+{
+   rdf:type  [<http://purl.uniprot.org/core/Other_DNA>]  ;          # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Genomic_DNA>]  ?
+            # 0.6666666666666667 % obj: <http://purl.uniprot.org/core/Genomic_DNA>. Cardinality: {1}
+}
+
+
+weso-s:Cofactor_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Cofactor_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/cofactor>  IRI  +;            # 100.0 %
+            # 96.0 % obj: IRI. Cardinality: {1}
+            # 3.3333333333333335 % obj: IRI. Cardinality: {2}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {4}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 25.333333333333336 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Signal_Peptide_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Signal_Peptide_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI  ;                # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Proteome
+{
+   rdf:type  [<http://purl.uniprot.org/core/Proteome>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  {2};          # 100.0 %
+   <http://purl.uniprot.org/core/organism>  IRI  ;             # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#closeMatch>  IRI  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#narrower>  IRI  +;          # 100.0 %
+            # 72.66666666666667 % obj: IRI. Cardinality: {1}
+            # 6.666666666666667 % obj: IRI. Cardinality: {2}
+            # 2.0 % obj: IRI. Cardinality: {8}
+            # 2.0 % obj: IRI. Cardinality: {24}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {5}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {7}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {4}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {14}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {9}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {3}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {31}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {29}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {6}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {10}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {36}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {22}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {21}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {20}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {43}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {19}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {16}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {17}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {13}
+   <http://purl.org/dc/terms/modified>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/citation>  IRI  *;
+            # 92.0 % obj: IRI. Cardinality: +
+            # 72.66666666666667 % obj: IRI. Cardinality: {1}
+            # 11.333333333333332 % obj: IRI. Cardinality: {2}
+            # 3.3333333333333335 % obj: IRI. Cardinality: {3}
+            # 2.0 % obj: IRI. Cardinality: {4}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {5}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {6}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {8}
+   <http://busco.ezlab.org/schema#has_score>  IRI  ?;
+            # 88.66666666666667 % obj: IRI. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Representative_Proteome>]  ?;
+            # 58.666666666666664 % obj: <http://purl.uniprot.org/core/Representative_Proteome>. Cardinality: {1}
+   <http://purl.uniprot.org/core/strain>  IRI  ?;
+            # 50.0 % obj: IRI. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Reference_Proteome>]  ?;
+            # 40.666666666666664 % obj: <http://purl.uniprot.org/core/Reference_Proteome>. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  *;
+            # 38.666666666666664 % obj: xsd:string. Cardinality: +
+            # 18.666666666666668 % obj: xsd:string. Cardinality: {1}
+            # 12.666666666666668 % obj: xsd:string. Cardinality: {2}
+            # 7.333333333333333 % obj: xsd:string. Cardinality: {3}
+   <http://purl.uniprot.org/core/panproteome>  IRI  ?
+            # 28.000000000000004 % obj: IRI. Cardinality: {1}
+            # 28.000000000000004 % obj: @weso-s:Representative_Proteome. Cardinality: {1}
+            # 27.333333333333332 % obj: @weso-s:Proteome. Cardinality: {1}
+            # 18.0 % obj: @weso-s:Reference_Proteome. Cardinality: {1}
+}
+
+
+weso-s:Reference_Proteome
+{
+   rdf:type  [<http://purl.uniprot.org/core/Proteome>]  ;          # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Reference_Proteome>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  {2};          # 100.0 %
+   <http://purl.uniprot.org/core/organism>  IRI  ;             # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#closeMatch>  IRI  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#narrower>  IRI  +;          # 100.0 %
+            # 43.333333333333336 % obj: IRI. Cardinality: {1}
+            # 10.666666666666668 % obj: IRI. Cardinality: {2}
+            # 6.0 % obj: IRI. Cardinality: {3}
+            # 3.3333333333333335 % obj: IRI. Cardinality: {7}
+            # 2.666666666666667 % obj: IRI. Cardinality: {9}
+            # 2.666666666666667 % obj: IRI. Cardinality: {24}
+            # 2.666666666666667 % obj: IRI. Cardinality: {6}
+            # 2.0 % obj: IRI. Cardinality: {8}
+            # 2.0 % obj: IRI. Cardinality: {5}
+            # 2.0 % obj: IRI. Cardinality: {10}
+            # 2.0 % obj: IRI. Cardinality: {4}
+            # 2.0 % obj: IRI. Cardinality: {14}
+            # 2.0 % obj: IRI. Cardinality: {21}
+            # 2.0 % obj: IRI. Cardinality: {19}
+            # 2.0 % obj: IRI. Cardinality: {26}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {36}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {22}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {16}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {34}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {31}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {29}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {20}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {43}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {17}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {35}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {12}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {25}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {52}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {15}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {23}
+            # 0.6666666666666667 % obj: @weso-s:Proteome_Component. Cardinality: {1}
+   <http://purl.org/dc/terms/modified>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/citation>  IRI  *;
+            # 98.66666666666667 % obj: IRI. Cardinality: +
+            # 56.666666666666664 % obj: IRI. Cardinality: {1}
+            # 20.666666666666668 % obj: IRI. Cardinality: {2}
+            # 10.666666666666668 % obj: IRI. Cardinality: {3}
+            # 4.666666666666667 % obj: IRI. Cardinality: {4}
+            # 2.0 % obj: IRI. Cardinality: {5}
+            # 2.0 % obj: IRI. Cardinality: {8}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {29}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {9}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {23}
+   rdf:type  [<http://purl.uniprot.org/core/Representative_Proteome>]  ?;
+            # 94.66666666666667 % obj: <http://purl.uniprot.org/core/Representative_Proteome>. Cardinality: {1}
+   <http://purl.uniprot.org/core/strain>  IRI  ?;
+            # 82.66666666666667 % obj: IRI. Cardinality: {1}
+   <http://busco.ezlab.org/schema#has_score>  IRI  ?;
+            # 80.0 % obj: IRI. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  *;
+            # 73.33333333333333 % obj: xsd:string. Cardinality: +
+            # 30.0 % obj: xsd:string. Cardinality: {1}
+            # 26.666666666666668 % obj: xsd:string. Cardinality: {2}
+            # 12.666666666666668 % obj: xsd:string. Cardinality: {3}
+            # 4.0 % obj: xsd:string. Cardinality: {4}
+   <http://purl.uniprot.org/core/panproteome>  IRI  ?
+            # 50.66666666666667 % obj: IRI. Cardinality: {1}
+            # 49.333333333333336 % obj: @weso-s:Reference_Proteome. Cardinality: {1}
+            # 36.666666666666664 % obj: @weso-s:Representative_Proteome. Cardinality: {1}
+            # 17.333333333333336 % obj: @weso-s:Proteome. Cardinality: {1}
+}
+
+
+weso-s:Representative_Proteome
+{
+   rdf:type  [<http://purl.uniprot.org/core/Proteome>]  ;          # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Representative_Proteome>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  {2};          # 100.0 %
+   <http://purl.uniprot.org/core/organism>  IRI  ;             # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#closeMatch>  IRI  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#narrower>  IRI  +;          # 100.0 %
+            # 52.0 % obj: IRI. Cardinality: {1}
+            # 9.333333333333334 % obj: IRI. Cardinality: {2}
+            # 6.666666666666667 % obj: IRI. Cardinality: {3}
+            # 3.3333333333333335 % obj: IRI. Cardinality: {6}
+            # 3.3333333333333335 % obj: IRI. Cardinality: {4}
+            # 2.0 % obj: IRI. Cardinality: {8}
+            # 2.0 % obj: IRI. Cardinality: {5}
+            # 2.0 % obj: IRI. Cardinality: {10}
+            # 2.0 % obj: IRI. Cardinality: {14}
+            # 2.0 % obj: IRI. Cardinality: {19}
+            # 2.0 % obj: IRI. Cardinality: {24}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {7}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {9}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {34}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {31}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {29}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {36}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {22}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {21}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {20}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {43}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {16}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {17}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {13}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {26}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {35}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {11}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {12}
+   <http://purl.org/dc/terms/modified>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/citation>  IRI  *;
+            # 97.33333333333334 % obj: IRI. Cardinality: +
+            # 65.33333333333333 % obj: IRI. Cardinality: {1}
+            # 16.0 % obj: IRI. Cardinality: {2}
+            # 8.666666666666668 % obj: IRI. Cardinality: {3}
+            # 4.666666666666667 % obj: IRI. Cardinality: {4}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {5}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {6}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {8}
+   <http://busco.ezlab.org/schema#has_score>  IRI  ?;
+            # 84.66666666666667 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/strain>  IRI  ?;
+            # 83.33333333333334 % obj: IRI. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Reference_Proteome>]  ?;
+            # 68.66666666666667 % obj: <http://purl.uniprot.org/core/Reference_Proteome>. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  *;
+            # 65.33333333333333 % obj: xsd:string. Cardinality: +
+            # 31.333333333333336 % obj: xsd:string. Cardinality: {1}
+            # 22.0 % obj: xsd:string. Cardinality: {2}
+            # 10.666666666666668 % obj: xsd:string. Cardinality: {3}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {4}
+   <http://purl.uniprot.org/core/panproteome>  IRI  ?
+            # 48.66666666666667 % obj: IRI. Cardinality: {1}
+            # 48.66666666666667 % obj: @weso-s:Representative_Proteome. Cardinality: {1}
+            # 34.0 % obj: @weso-s:Reference_Proteome. Cardinality: {1}
+            # 26.0 % obj: @weso-s:Proteome. Cardinality: {1}
+}
+
+
+weso-s:Position
+{
+   rdf:type  [<http://biohackathon.org/resource/faldo#Position>]  ;          # 100.0 %
+   <http://biohackathon.org/resource/faldo#reference>  IRI  ;          # 100.0 %
+   rdf:type  [<http://biohackathon.org/resource/faldo#ExactPosition>]  ?;
+            # 39.33333333333333 % obj: <http://biohackathon.org/resource/faldo#ExactPosition>. Cardinality: {1}
+   <http://biohackathon.org/resource/faldo#position>  xsd:integer  ?;
+            # 39.33333333333333 % obj: xsd:integer. Cardinality: {1}
+   rdf:type  [<http://biohackathon.org/resource/faldo#InRangePosition>]  ?;
+            # 32.0 % obj: <http://biohackathon.org/resource/faldo#InRangePosition>. Cardinality: {1}
+   rdf:type  [<http://biohackathon.org/resource/faldo#OneOfPosition>]  ?;
+            # 28.666666666666668 % obj: <http://biohackathon.org/resource/faldo#OneOfPosition>. Cardinality: {1}
+   <http://biohackathon.org/resource/faldo#possiblePosition>  IRI  ?;
+            # 28.666666666666668 % obj: IRI. Cardinality: {1}
+   <http://biohackathon.org/resource/faldo#begin>  IRI  ?;
+            # 17.333333333333336 % obj: IRI. Cardinality: {1}
+   <http://biohackathon.org/resource/faldo#end>  IRI  ?
+            # 14.666666666666666 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:OneOfPosition
+{
+   rdf:type  [<http://biohackathon.org/resource/faldo#Position>]  ;          # 100.0 %
+   rdf:type  [<http://biohackathon.org/resource/faldo#OneOfPosition>]  ;          # 100.0 %
+   <http://biohackathon.org/resource/faldo#reference>  IRI  ;          # 100.0 %
+   <http://biohackathon.org/resource/faldo#possiblePosition>  IRI            # 100.0 %
+}
+
+
+weso-s:Proteome_Component
+{
+   rdf:type  [<http://purl.uniprot.org/core/Proteome_Component>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  +          # 100.0 %
+            # 99.33333333333333 % obj: IRI. Cardinality: {3}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {2}
+}
+
+
+weso-s:Modified_Sequence
+{
+   rdf:type  [<http://purl.uniprot.org/core/Modified_Sequence>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/basedOn>  IRI  ;              # 100.0 %
+            # 2.0 % obj: @weso-s:Simple_Sequence. Cardinality: {1}
+            # 1.3333333333333335 % obj: @weso-s:External_Sequence. Cardinality: {1}
+   <http://purl.uniprot.org/core/created>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/modification>  IRI  +;          # 100.0 %
+            # 60.0 % obj: IRI. Cardinality: {1}
+            # 28.666666666666668 % obj: IRI. Cardinality: {2}
+            # 8.666666666666668 % obj: IRI. Cardinality: {3}
+            # 2.666666666666667 % obj: IRI. Cardinality: {4}
+   <http://purl.uniprot.org/core/modified>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/organism>  IRI  ;             # 100.0 %
+   <http://purl.uniprot.org/core/reviewed>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/structuredName>  IRI  ;          # 100.0 %
+   <http://purl.uniprot.org/core/version>  xsd:integer  ;          # 100.0 %
+   rdf:value  xsd:string  ;                                    # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ?;
+            # 98.66666666666667 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/encodedBy>  IRI  ?;
+            # 96.66666666666667 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/name>  xsd:integer  ?;
+            # 69.33333333333334 % obj: xsd:integer. Cardinality: {1}
+   <http://purl.uniprot.org/core/representativeFor>  IRI  *;
+            # 65.33333333333333 % obj: IRI. Cardinality: +
+            # 28.000000000000004 % obj: IRI. Cardinality: {3}
+            # 25.333333333333336 % obj: IRI. Cardinality: {1}
+            # 12.0 % obj: IRI. Cardinality: {2}
+   <http://purl.uniprot.org/core/seedFor>  IRI  *;
+            # 62.0 % obj: IRI. Cardinality: +
+            # 44.666666666666664 % obj: IRI. Cardinality: {1}
+            # 12.666666666666668 % obj: IRI. Cardinality: {2}
+            # 4.666666666666667 % obj: IRI. Cardinality: {3}
+   <http://purl.uniprot.org/core/name>  xsd:string  *;
+            # 49.333333333333336 % obj: xsd:string. Cardinality: +
+            # 34.0 % obj: xsd:string. Cardinality: {1}
+            # 12.666666666666668 % obj: xsd:string. Cardinality: {2}
+            # 2.0 % obj: xsd:string. Cardinality: {3}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {5}
+   rdf:type  [<http://purl.uniprot.org/core/External_Sequence>]  ?;
+            # 11.333333333333332 % obj: <http://purl.uniprot.org/core/External_Sequence>. Cardinality: {1}
+   <http://purl.uniprot.org/core/name>  xsd:float  ?
+            # 0.6666666666666667 % obj: xsd:float. Cardinality: {1}
+}
+
+
+weso-s:Interaction
+{
+   rdf:type  [<http://purl.uniprot.org/core/Interaction>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/experiments>  xsd:integer  ;          # 100.0 %
+   <http://purl.uniprot.org/core/participant>  IRI  +;          # 100.0 %
+            # 54.0 % obj: IRI. Cardinality: {1}
+            # 46.0 % obj: IRI. Cardinality: {2}
+            # 38.0 % obj: @weso-s:Participant. Cardinality: +
+   <http://purl.uniprot.org/core/xeno>  xsd:string  ;          # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Self_Interaction>]  ?;
+            # 54.0 % obj: <http://purl.uniprot.org/core/Self_Interaction>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Non_Self_Interaction>]  ?
+            # 46.0 % obj: <http://purl.uniprot.org/core/Non_Self_Interaction>. Cardinality: {1}
+}
+
+
+weso-s:Self_Interaction
+{
+   rdf:type  [<http://purl.uniprot.org/core/Interaction>]  ;          # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Self_Interaction>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/experiments>  xsd:integer  ;          # 100.0 %
+   <http://purl.uniprot.org/core/participant>  IRI  ;          # 100.0 %
+            # 4.666666666666667 % obj: @weso-s:Participant. Cardinality: {1}
+   <http://purl.uniprot.org/core/xeno>  xsd:string             # 100.0 %
+}
+
+
+weso-s:Cellular_Component
+{
+   rdf:type  [<http://purl.uniprot.org/core/Cellular_Component>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#subClassOf>  IRI  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/alias>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#exactMatch>  IRI  ?;
+            # 85.33333333333334 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/partOf>  IRI  *;
+            # 74.66666666666667 % obj: IRI. Cardinality: +
+            # 65.33333333333333 % obj: IRI. Cardinality: {1}
+            # 9.333333333333334 % obj: IRI. Cardinality: {2}
+            # 34.66666666666667 % obj: @weso-s:Cellular_Component. Cardinality: +
+   <http://www.w3.org/2004/02/skos/core#altLabel>  xsd:string  *;
+            # 58.666666666666664 % obj: xsd:string. Cardinality: +
+            # 32.666666666666664 % obj: xsd:string. Cardinality: {1}
+            # 11.333333333333332 % obj: xsd:string. Cardinality: {2}
+            # 8.0 % obj: xsd:string. Cardinality: {3}
+            # 3.3333333333333335 % obj: xsd:string. Cardinality: {4}
+            # 2.0 % obj: xsd:string. Cardinality: {6}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {8}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {9}
+   <http://purl.uniprot.org/core/relatedLocation>  IRI  *;
+            # 33.33333333333333 % obj: IRI. Cardinality: +
+            # 22.666666666666664 % obj: IRI. Cardinality: {1}
+            # 8.0 % obj: IRI. Cardinality: {2}
+            # 2.666666666666667 % obj: IRI. Cardinality: {3}
+            # 16.666666666666664 % obj: @weso-s:Cellular_Component. Cardinality: +
+   owl:sameAs  IRI  ?;
+            # 26.0 % obj: IRI. Cardinality: {1}
+            # 5.333333333333334 % obj: @weso-s:Concept. Cardinality: {1}
+   <http://purl.uniprot.org/core/citation>  @weso-s:Citation  ?;
+            # 3.3333333333333335 % obj: @weso-s:Citation. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  ?
+            # 3.3333333333333335 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Developmental_Stage_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Developmental_Stage_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Catalytic_Activity
+{
+   rdf:type  [<http://purl.uniprot.org/core/Catalytic_Activity>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Compositional_Bias_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Compositional_Bias_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Submission_Citation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Submission_Citation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/date>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/submittedTo>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/author>  xsd:string  *;
+            # 95.8041958041958 % obj: xsd:string. Cardinality: +
+            # 22.377622377622377 % obj: xsd:string. Cardinality: {2}
+            # 18.181818181818183 % obj: xsd:string. Cardinality: {1}
+            # 14.685314685314685 % obj: xsd:string. Cardinality: {3}
+            # 9.79020979020979 % obj: xsd:string. Cardinality: {4}
+            # 9.79020979020979 % obj: xsd:string. Cardinality: {5}
+            # 6.293706293706294 % obj: xsd:string. Cardinality: {6}
+            # 4.195804195804196 % obj: xsd:string. Cardinality: {7}
+            # 2.097902097902098 % obj: xsd:string. Cardinality: {23}
+            # 1.3986013986013985 % obj: xsd:string. Cardinality: {11}
+            # 1.3986013986013985 % obj: xsd:string. Cardinality: {8}
+            # 1.3986013986013985 % obj: xsd:string. Cardinality: {20}
+            # 0.6993006993006993 % obj: xsd:string. Cardinality: {16}
+            # 0.6993006993006993 % obj: xsd:string. Cardinality: {10}
+            # 0.6993006993006993 % obj: xsd:string. Cardinality: {34}
+            # 0.6993006993006993 % obj: xsd:string. Cardinality: {19}
+            # 0.6993006993006993 % obj: xsd:string. Cardinality: {9}
+            # 0.6993006993006993 % obj: xsd:string. Cardinality: {25}
+   <http://purl.uniprot.org/core/title>  xsd:string  ?;
+            # 52.44755244755245 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/group>  xsd:string  *
+            # 5.594405594405594 % obj: xsd:string. Cardinality: +
+            # 4.895104895104895 % obj: xsd:string. Cardinality: {1}
+            # 0.6993006993006993 % obj: xsd:string. Cardinality: {2}
+}
+
+
+weso-s:Repeat_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Repeat_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI  ;                # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 94.0 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:integer  ?
+            # 6.0 % obj: xsd:integer. Cardinality: {1}
+}
+
+
+weso-s:Coiled_Coil_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Coiled_Coil_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Region
+{
+   rdf:type  [<http://biohackathon.org/resource/faldo#Region>]  ;          # 100.0 %
+   <http://biohackathon.org/resource/faldo#begin>  IRI  ;          # 100.0 %
+   <http://biohackathon.org/resource/faldo#end>  IRI            # 100.0 %
+}
+
+
+weso-s:Electronic_Citation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Electronic_Citation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/author>  xsd:string  +;          # 100.0 %
+            # 35.333333333333336 % obj: xsd:string. Cardinality: {3}
+            # 28.666666666666668 % obj: xsd:string. Cardinality: {2}
+            # 21.333333333333336 % obj: xsd:string. Cardinality: {4}
+            # 7.333333333333333 % obj: xsd:string. Cardinality: {5}
+            # 4.0 % obj: xsd:string. Cardinality: {6}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {1}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {7}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {10}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {8}
+   <http://purl.uniprot.org/core/locator>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/date>  xsd:integer  ?;
+            # 99.33333333333333 % obj: xsd:integer. Cardinality: {1}
+   <http://purl.uniprot.org/core/name>  xsd:string  ?;
+            # 99.33333333333333 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/title>  xsd:string  ?;
+            # 99.33333333333333 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2004/02/skos/core#exactMatch>  IRI  ?;
+            # 99.33333333333333 % obj: IRI. Cardinality: {1}
+   <http://purl.org/dc/terms/identifier>  xsd:string  ?
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Induction_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Induction_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Unassigned_DNA
+{
+   rdf:type  [<http://purl.uniprot.org/core/Unassigned_DNA>]  ;          # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Genomic_DNA>]  ?;
+            # 6.0 % obj: <http://purl.uniprot.org/core/Genomic_DNA>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Genomic_RNA>]  ?
+            # 1.3333333333333335 % obj: <http://purl.uniprot.org/core/Genomic_RNA>. Cardinality: {1}
+}
+
+
+weso-s:Domain_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Domain_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/sequence>  IRI  ?
+            # 26.0 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Initiator_Methionine_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Initiator_Methionine_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Transcribed_RNA
+{
+   rdf:type  [<http://purl.uniprot.org/core/Transcribed_RNA>]            # 100.0 %
+}
+
+
+weso-s:Topological_Domain_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Topological_Domain_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Subcellular_Location_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Subcellular_Location_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/locatedIn>  IRI  +;           # 100.0 %
+            # 68.66666666666667 % obj: IRI. Cardinality: {1}
+            # 30.0 % obj: IRI. Cardinality: {2}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {3}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 13.333333333333334 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Score
+{
+   rdf:type  [<http://busco.ezlab.org/schema#Score>]  ;          # 100.0 %
+   <http://busco.ezlab.org/schema#completeSingle>  xsd:integer  ;          # 100.0 %
+   <http://busco.ezlab.org/schema#complete>  xsd:integer  ;          # 100.0 %
+   <http://busco.ezlab.org/schema#completeMulti>  xsd:integer  ;          # 100.0 %
+   <http://busco.ezlab.org/schema#fragmented>  xsd:integer  ;          # 100.0 %
+   <http://busco.ezlab.org/schema#missing>  xsd:integer  ;          # 100.0 %
+   <http://busco.ezlab.org/schema#referenceDataset>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Kinetics_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Kinetics_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/measuredAffinity>  xsd:string  *;
+            # 96.66666666666667 % obj: xsd:string. Cardinality: +
+            # 26.666666666666668 % obj: xsd:string. Cardinality: {1}
+            # 24.0 % obj: xsd:string. Cardinality: {2}
+            # 14.666666666666666 % obj: xsd:string. Cardinality: {3}
+            # 8.0 % obj: xsd:string. Cardinality: {4}
+            # 7.333333333333333 % obj: xsd:string. Cardinality: {6}
+            # 5.333333333333334 % obj: xsd:string. Cardinality: {5}
+            # 2.666666666666667 % obj: xsd:string. Cardinality: {8}
+            # 2.0 % obj: xsd:string. Cardinality: {15}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {7}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {10}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {13}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {18}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {20}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {11}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {9}
+   <http://purl.uniprot.org/core/measuredActivity>  xsd:string  *;
+            # 38.666666666666664 % obj: xsd:string. Cardinality: +
+            # 18.666666666666668 % obj: xsd:string. Cardinality: {1}
+            # 8.0 % obj: xsd:string. Cardinality: {2}
+            # 3.3333333333333335 % obj: xsd:string. Cardinality: {5}
+            # 2.666666666666667 % obj: xsd:string. Cardinality: {3}
+            # 2.0 % obj: xsd:string. Cardinality: {4}
+            # 2.0 % obj: xsd:string. Cardinality: {6}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {7}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {8}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 35.333333333333336 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/sequence>  IRI  ?
+            # 2.666666666666667 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Tissue_Specificity_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Tissue_Specificity_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/sequence>  IRI  ?
+            # 1.3333333333333335 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Axiom
+{
+   rdf:type  [owl:Axiom]  ;                                    # 100.0 %
+   owl:annotatedProperty  IRI  ;                               # 100.0 %
+   owl:annotatedSource  IRI  ;                                 # 100.0 %
+   owl:annotatedTarget  xsd:string  ;                          # 100.0 %
+   <http://www.geneontology.org/formats/oboInOwl#hasDbXref>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/sequence>  IRI  ?
+            # 0.6666666666666667 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Erroneous_Initiation_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Erroneous_Initiation_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/conflictingSequence>  IRI  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 21.333333333333336 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Property
+{
+   rdf:type  [rdf:Property]                                    # 100.0 %
+}
+
+
+weso-s:Toxic_Dose_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Toxic_Dose_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Sequence_Uncertainty_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Sequence_Uncertainty_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI  ;                # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 94.0 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:PH_Dependence_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/PH_Dependence_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Region_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Region_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Mass_Spectrometry_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Mass_Spectrometry_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/method>  IRI  ?;
+            # 96.0 % obj: IRI. Cardinality: {1}
+            # 96.0 % obj: @weso-s:NamedIndividual. Cardinality: {1}
+            # 96.0 % obj: @weso-s:Thing. Cardinality: {1}
+            # 96.0 % obj: @weso-s:Mass_Measurement_Method. Cardinality: {1}
+   <http://purl.uniprot.org/core/measuredValue>  xsd:integer  ?;
+            # 68.0 % obj: xsd:integer. Cardinality: {1}
+   <http://purl.uniprot.org/core/measuredValue>  xsd:float  ?;
+            # 32.0 % obj: xsd:float. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 26.666666666666668 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/measuredError>  xsd:integer  ?;
+            # 20.666666666666668 % obj: xsd:integer. Cardinality: {1}
+   <http://purl.uniprot.org/core/sequence>  IRI  ?;
+            # 19.333333333333332 % obj: IRI. Cardinality: {1}
+            # 9.333333333333334 % obj: @weso-s:Peptide_Annotation. Cardinality: {1}
+   <http://purl.uniprot.org/core/measuredError>  xsd:float  ?
+            # 17.333333333333336 % obj: xsd:float. Cardinality: {1}
+}
+
+
+weso-s:Citation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Citation>]  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#exactMatch>  IRI  ;          # 100.0 %
+   <http://xmlns.com/foaf/0.1/primaryTopicOf>  IRI  ;          # 100.0 %
+   <http://purl.org/dc/terms/identifier>  xsd:string  *;
+            # 74.0 % obj: xsd:string. Cardinality: +
+            # 72.66666666666667 % obj: xsd:string. Cardinality: {1}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {2}
+   rdf:type  [<http://purl.uniprot.org/core/Journal_Citation>]  ?;
+            # 62.0 % obj: <http://purl.uniprot.org/core/Journal_Citation>. Cardinality: {1}
+   <http://purl.uniprot.org/core/author>  xsd:string  *;
+            # 62.0 % obj: xsd:string. Cardinality: +
+            # 14.666666666666666 % obj: xsd:string. Cardinality: {4}
+            # 12.666666666666668 % obj: xsd:string. Cardinality: {5}
+            # 10.0 % obj: xsd:string. Cardinality: {6}
+            # 10.0 % obj: xsd:string. Cardinality: {3}
+            # 5.333333333333334 % obj: xsd:string. Cardinality: {7}
+            # 4.0 % obj: xsd:string. Cardinality: {2}
+            # 3.3333333333333335 % obj: xsd:string. Cardinality: {8}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {9}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/date>  xsd:integer  ?;
+            # 62.0 % obj: xsd:integer. Cardinality: {1}
+   <http://purl.uniprot.org/core/name>  xsd:string  *;
+            # 62.0 % obj: xsd:string. Cardinality: +
+            # 58.666666666666664 % obj: xsd:string. Cardinality: {1}
+            # 3.3333333333333335 % obj: xsd:string. Cardinality: {2}
+   <http://purl.uniprot.org/core/title>  xsd:string  ?;
+            # 62.0 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/volume>  xsd:integer  ?;
+            # 62.0 % obj: xsd:integer. Cardinality: {1}
+   <http://purl.uniprot.org/core/pages>  xsd:string  ?;
+            # 61.33333333333333 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 58.666666666666664 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  IRI  ?;
+            # 1.3333333333333335 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/erratum>  IRI  ?
+            # 0.6666666666666667 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:FunctionalProperty
+{
+   rdf:type  [owl:FunctionalProperty]  ;                       # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  @weso-s:Ontology  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#range>  IRI  ?;
+            # 86.8421052631579 % obj: IRI. Cardinality: {1}
+            # 23.684210526315788 % obj: @weso-s:Datatype. Cardinality: {1}
+   rdf:type  [owl:DatatypeProperty]  ?;
+            # 81.57894736842105 % obj: owl:DatatypeProperty. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#domain>  IRI  ?;
+            # 73.68421052631578 % obj: IRI. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 55.26315789473685 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#domain>  xsd:string  *;
+            # 26.31578947368421 % obj: xsd:string. Cardinality: {10}
+   rdf:type  [owl:ObjectProperty]  ?;
+            # 18.421052631578945 % obj: owl:ObjectProperty. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>  @weso-s:DatatypeProperty  ?;
+            # 10.526315789473683 % obj: @weso-s:DatatypeProperty. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  ?;
+            # 5.263157894736842 % obj: IRI. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#range>  xsd:string  *;
+            # 2.631578947368421 % obj: xsd:string. Cardinality: {10}
+   rdf:type  [owl:InverseFunctionalProperty]  ?
+            # 2.631578947368421 % obj: owl:InverseFunctionalProperty. Cardinality: {1}
+}
+
+
+weso-s:DatatypeProperty
+{
+   rdf:type  [owl:DatatypeProperty]  ;                         # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  @weso-s:Ontology  ?;
+            # 89.1566265060241 % obj: @weso-s:Ontology. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ?;
+            # 87.95180722891565 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#range>  IRI  ?;
+            # 68.67469879518072 % obj: IRI. Cardinality: {1}
+            # 38.55421686746988 % obj: @weso-s:Datatype. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  *;
+            # 61.44578313253012 % obj: xsd:string. Cardinality: +
+            # 60.24096385542169 % obj: xsd:string. Cardinality: {1}
+            # 1.2048192771084338 % obj: xsd:string. Cardinality: {2}
+   <http://www.w3.org/2000/01/rdf-schema#domain>  IRI  ?;
+            # 59.036144578313255 % obj: IRI. Cardinality: {1}
+   rdf:type  [owl:FunctionalProperty]  ?;
+            # 37.34939759036144 % obj: owl:FunctionalProperty. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>  @weso-s:DatatypeProperty  ?;
+            # 16.867469879518072 % obj: @weso-s:DatatypeProperty. Cardinality: {1}
+   owl:deprecated  xsd:string  ?;
+            # 14.457831325301203 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#domain>  xsd:string  *;
+            # 13.253012048192772 % obj: xsd:string. Cardinality: {10}
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  ?;
+            # 7.228915662650602 % obj: IRI. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#range>  xsd:string  *
+            # 2.4096385542168677 % obj: xsd:string. Cardinality: {10}
+}
+
+
+weso-s:Enzyme
+{
+   rdf:type  [<http://purl.uniprot.org/core/Enzyme>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#subClassOf>  IRI  +;          # 100.0 %
+            # 98.0 % obj: IRI. Cardinality: {4}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {1}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {2}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {3}
+            # 99.33333333333333 % obj: @weso-s:Enzyme. Cardinality: +
+   <http://www.w3.org/2004/02/skos/core#broaderTransitive>  @weso-s:Enzyme  ?;
+            # 99.33333333333333 % obj: @weso-s:Enzyme. Cardinality: {1}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  xsd:string  ?;
+            # 92.66666666666666 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/activity>  IRI  *;
+            # 90.66666666666666 % obj: IRI. Cardinality: +
+            # 70.66666666666667 % obj: IRI. Cardinality: {1}
+            # 15.333333333333332 % obj: IRI. Cardinality: {2}
+            # 2.666666666666667 % obj: IRI. Cardinality: {3}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {4}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {6}
+   <http://purl.uniprot.org/core/citation>  IRI  *;
+            # 70.0 % obj: IRI. Cardinality: +
+            # 36.666666666666664 % obj: IRI. Cardinality: {1}
+            # 18.666666666666668 % obj: IRI. Cardinality: {2}
+            # 6.666666666666667 % obj: IRI. Cardinality: {4}
+            # 6.666666666666667 % obj: IRI. Cardinality: {3}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {5}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  *;
+            # 60.66666666666667 % obj: xsd:string. Cardinality: +
+            # 37.333333333333336 % obj: xsd:string. Cardinality: {1}
+            # 15.333333333333332 % obj: xsd:string. Cardinality: {2}
+            # 5.333333333333334 % obj: xsd:string. Cardinality: {3}
+            # 2.666666666666667 % obj: xsd:string. Cardinality: {4}
+   <http://www.w3.org/2004/02/skos/core#altLabel>  xsd:string  *;
+            # 51.33333333333333 % obj: xsd:string. Cardinality: +
+            # 28.000000000000004 % obj: xsd:string. Cardinality: {1}
+            # 11.333333333333332 % obj: xsd:string. Cardinality: {2}
+            # 4.0 % obj: xsd:string. Cardinality: {4}
+            # 4.0 % obj: xsd:string. Cardinality: {3}
+            # 2.0 % obj: xsd:string. Cardinality: {5}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {8}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {7}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {6}
+   <http://purl.uniprot.org/core/obsolete>  xsd:string  ?;
+            # 7.333333333333333 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/replaces>  IRI  *;
+            # 6.666666666666667 % obj: IRI. Cardinality: +
+            # 6.0 % obj: IRI. Cardinality: {1}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {2}
+            # 4.0 % obj: @weso-s:Enzyme. Cardinality: {1}
+   <http://purl.uniprot.org/core/replacedBy>  IRI  *;
+            # 6.0 % obj: IRI. Cardinality: +
+            # 5.333333333333334 % obj: IRI. Cardinality: {1}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {3}
+            # 2.666666666666667 % obj: @weso-s:Enzyme. Cardinality: +
+   <http://www.w3.org/2004/02/skos/core#narrowerTransitive>  @weso-s:Enzyme  *
+            # 2.0 % obj: @weso-s:Enzyme. Cardinality: +
+            # 1.3333333333333335 % obj: @weso-s:Enzyme. Cardinality: {1}
+            # 0.6666666666666667 % obj: @weso-s:Enzyme. Cardinality: {136}
+}
+
+
+weso-s:Catalytic_Activity_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Catalytic_Activity_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/catalyticActivity>  IRI  ;          # 100.0 %
+   <http://purl.uniprot.org/core/catalyzedPhysiologicalReaction>  IRI  ?
+            # 6.666666666666667 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Database
+{
+   rdf:type  [<http://purl.uniprot.org/core/Database>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  +;          # 100.0 %
+            # 94.66666666666667 % obj: IRI. Cardinality: {1}
+            # 5.333333333333334 % obj: IRI. Cardinality: {2}
+   <http://purl.uniprot.org/core/category>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/urlTemplate>  IRI  ;          # 100.0 %
+   <http://purl.uniprot.org/core/abbreviation>  xsd:string  ;          # 100.0 %
+   <http://purl.org/dc/terms/identifier>  xsd:integer  ;          # 100.0 %
+   <http://purl.uniprot.org/core/citation>  IRI  ?;
+            # 94.0 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/linkIsExplicit>  xsd:string  ?;
+            # 90.66666666666666 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 6.666666666666667 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Domain_Extent_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Domain_Extent_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Lipidation_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Lipidation_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Viral_cRNA
+{
+   rdf:type  [<http://purl.uniprot.org/core/Viral_cRNA>]  ;          # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Genomic_RNA>]  ?;
+            # 14.666666666666666 % obj: <http://purl.uniprot.org/core/Genomic_RNA>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/MRNA>]  ?
+            # 1.3333333333333335 % obj: <http://purl.uniprot.org/core/MRNA>. Cardinality: {1}
+}
+
+
+weso-s:Disulfide_Bond_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Disulfide_Bond_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI  {2};             # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 24.666666666666668 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Non-adjacent_Residues_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Non-adjacent_Residues_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:InRangePosition
+{
+   rdf:type  [<http://biohackathon.org/resource/faldo#Position>]  ;          # 100.0 %
+   rdf:type  [<http://biohackathon.org/resource/faldo#InRangePosition>]  ;          # 100.0 %
+   <http://biohackathon.org/resource/faldo#reference>  IRI  ;          # 100.0 %
+   <http://biohackathon.org/resource/faldo#begin>  IRI  ?;
+            # 62.66666666666667 % obj: IRI. Cardinality: {1}
+   <http://biohackathon.org/resource/faldo#end>  IRI  ?
+            # 37.333333333333336 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Beta_Strand_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Beta_Strand_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Structure_Resource
+{
+   rdf:type  [<http://purl.uniprot.org/core/Structure_Resource>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/chainSequenceMapping>  IRI  +;          # 100.0 %
+            # 98.66666666666667 % obj: IRI. Cardinality: {1}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {2}
+   <http://purl.uniprot.org/core/database>  @weso-s:Database  ;          # 100.0 %
+   <http://purl.uniprot.org/core/method>  IRI  ;               # 100.0 %
+            # 100.0 % obj: @weso-s:NamedIndividual. Cardinality: {1}
+            # 100.0 % obj: @weso-s:Thing. Cardinality: {1}
+            # 100.0 % obj: @weso-s:Structure_Determination_Method. Cardinality: {1}
+   <http://purl.uniprot.org/core/resolution>  xsd:float  ?;
+            # 62.66666666666667 % obj: xsd:float. Cardinality: {1}
+   <http://purl.uniprot.org/core/resolution>  xsd:integer  ?
+            # 10.0 % obj: xsd:integer. Cardinality: {1}
+}
+
+
+weso-s:Caution_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Caution_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Simple_Sequence
+{
+   rdf:type  [<http://purl.uniprot.org/core/Simple_Sequence>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/mass>  xsd:integer  ;          # 100.0 %
+   <http://purl.uniprot.org/core/md5Checksum>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/modified>  xsd:string  +;          # 100.0 %
+            # 98.0 % obj: xsd:string. Cardinality: {2}
+            # 2.0 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/version>  xsd:integer  +;          # 100.0 %
+            # 66.66666666666666 % obj: xsd:integer. Cardinality: {1}
+            # 33.33333333333333 % obj: xsd:integer. Cardinality: {2}
+   rdf:value  xsd:string  ;                                    # 100.0 %
+   <http://purl.uniprot.org/core/created>  xsd:string  ?;
+            # 98.66666666666667 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/organism>  IRI  ?;
+            # 98.66666666666667 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/reviewed>  xsd:string  ?;
+            # 98.66666666666667 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/structuredName>  IRI  ?;
+            # 98.66666666666667 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/encodedBy>  IRI  ?;
+            # 92.0 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/name>  xsd:string  *;
+            # 64.66666666666666 % obj: xsd:string. Cardinality: +
+            # 51.33333333333333 % obj: xsd:string. Cardinality: {1}
+            # 10.666666666666668 % obj: xsd:string. Cardinality: {2}
+            # 2.666666666666667 % obj: xsd:string. Cardinality: {3}
+   rdf:type  [<http://purl.uniprot.org/core/External_Sequence>]  ?;
+            # 47.333333333333336 % obj: <http://purl.uniprot.org/core/External_Sequence>. Cardinality: {1}
+   <http://purl.uniprot.org/core/name>  xsd:integer  ?;
+            # 43.333333333333336 % obj: xsd:integer. Cardinality: {1}
+   <http://purl.uniprot.org/core/precursor>  xsd:string  ?;
+            # 17.333333333333336 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/fragment>  xsd:string  ?
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:ExactPosition
+{
+   rdf:type  [<http://biohackathon.org/resource/faldo#ExactPosition>]  ;          # 100.0 %
+   <http://biohackathon.org/resource/faldo#reference>  IRI  ;          # 100.0 %
+   <http://biohackathon.org/resource/faldo#position>  xsd:integer  ;          # 100.0 %
+   rdf:type  [<http://biohackathon.org/resource/faldo#Position>]  ?
+            # 52.666666666666664 % obj: <http://biohackathon.org/resource/faldo#Position>. Cardinality: {1}
+}
+
+
+weso-s:Pathway
+{
+   rdf:type  [<http://purl.uniprot.org/core/Pathway>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#subClassOf>  IRI  +;          # 100.0 %
+            # 63.33333333333333 % obj: IRI. Cardinality: {2}
+            # 26.666666666666668 % obj: IRI. Cardinality: {4}
+            # 8.0 % obj: IRI. Cardinality: {3}
+            # 2.0 % obj: IRI. Cardinality: {1}
+            # 88.0 % obj: @weso-s:Pathway. Cardinality: +
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#narrower>  @weso-s:Pathway  *
+            # 17.333333333333336 % obj: @weso-s:Pathway. Cardinality: +
+            # 7.333333333333333 % obj: @weso-s:Pathway. Cardinality: {1}
+            # 3.3333333333333335 % obj: @weso-s:Pathway. Cardinality: {3}
+            # 2.0 % obj: @weso-s:Pathway. Cardinality: {4}
+            # 2.0 % obj: @weso-s:Pathway. Cardinality: {2}
+            # 0.6666666666666667 % obj: @weso-s:Pathway. Cardinality: {66}
+            # 0.6666666666666667 % obj: @weso-s:Pathway. Cardinality: {10}
+            # 0.6666666666666667 % obj: @weso-s:Pathway. Cardinality: {5}
+            # 0.6666666666666667 % obj: @weso-s:Pathway. Cardinality: {7}
+}
+
+
+weso-s:Tissue
+{
+   rdf:type  [<http://purl.uniprot.org/core/Tissue>]  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#altLabel>  xsd:string  *;
+            # 33.33333333333333 % obj: xsd:string. Cardinality: +
+            # 19.333333333333332 % obj: xsd:string. Cardinality: {1}
+            # 8.0 % obj: xsd:string. Cardinality: {2}
+            # 3.3333333333333335 % obj: xsd:string. Cardinality: {3}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {4}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {5}
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  ?
+            # 6.666666666666667 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Taxon
+{
+   rdf:type  [<http://purl.uniprot.org/core/Taxon>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/partOfLineage>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#subClassOf>  IRI  *;
+            # 93.33333333333333 % obj: IRI. Cardinality: +
+            # 35.333333333333336 % obj: IRI. Cardinality: {13}
+            # 33.33333333333333 % obj: IRI. Cardinality: {14}
+            # 8.0 % obj: IRI. Cardinality: {11}
+            # 8.0 % obj: IRI. Cardinality: {12}
+            # 4.0 % obj: IRI. Cardinality: {16}
+            # 3.3333333333333335 % obj: IRI. Cardinality: {15}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {7}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {9}
+            # 8.0 % obj: @weso-s:Taxon. Cardinality: {1}
+   <http://purl.uniprot.org/core/scientificName>  xsd:string  ?;
+            # 93.33333333333333 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/rank>  IRI  ?;
+            # 92.66666666666666 % obj: IRI. Cardinality: {1}
+            # 92.66666666666666 % obj: @weso-s:NamedIndividual. Cardinality: {1}
+            # 92.66666666666666 % obj: @weso-s:Thing. Cardinality: {1}
+            # 92.66666666666666 % obj: @weso-s:Rank. Cardinality: {1}
+   <http://purl.uniprot.org/core/otherName>  xsd:string  *;
+            # 49.333333333333336 % obj: xsd:string. Cardinality: +
+            # 18.0 % obj: xsd:string. Cardinality: {1}
+            # 12.0 % obj: xsd:string. Cardinality: {3}
+            # 7.333333333333333 % obj: xsd:string. Cardinality: {2}
+            # 6.0 % obj: xsd:string. Cardinality: {4}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {5}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {6}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {9}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {8}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {7}
+   <http://www.w3.org/2004/02/skos/core#narrowerTransitive>  IRI  *;
+            # 18.666666666666668 % obj: IRI. Cardinality: +
+            # 6.0 % obj: IRI. Cardinality: {1}
+            # 4.666666666666667 % obj: IRI. Cardinality: {2}
+            # 2.666666666666667 % obj: IRI. Cardinality: {5}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {3}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {9}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {4}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {7}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {8}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {10}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {6}
+            # 8.0 % obj: @weso-s:Taxon. Cardinality: {1}
+   <http://purl.uniprot.org/core/replaces>  IRI  *;
+            # 7.333333333333333 % obj: IRI. Cardinality: +
+            # 5.333333333333334 % obj: IRI. Cardinality: {1}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {2}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {3}
+   <http://purl.uniprot.org/core/obsolete>  xsd:string  ?;
+            # 6.666666666666667 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/replacedBy>  IRI  ?;
+            # 6.666666666666667 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/commonName>  xsd:string  ?;
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/mnemonic>  xsd:string  ?;
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/strain>  @weso-s:Strain  ?;
+            # 1.3333333333333335 % obj: @weso-s:Strain. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  *;
+            # 0.6666666666666667 % obj: IRI. Cardinality: {6}
+   <http://purl.uniprot.org/core/synonym>  xsd:string  ?;
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {1}
+   <http://xmlns.com/foaf/0.1/depiction>  @weso-s:Image  *
+            # 0.6666666666666667 % obj: @weso-s:Image. Cardinality: {2}
+}
+
+
+weso-s:MRNA
+{
+   rdf:type  [<http://purl.uniprot.org/core/MRNA>]  ;          # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Viral_cRNA>]  ?
+            # 1.3333333333333335 % obj: <http://purl.uniprot.org/core/Viral_cRNA>. Cardinality: {1}
+}
+
+
+weso-s:Unknown_Sequence
+{
+   rdf:type  [<http://purl.uniprot.org/core/Unknown_Sequence>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/name>  xsd:string  *;
+            # 90.66666666666666 % obj: xsd:string. Cardinality: +
+            # 66.66666666666666 % obj: xsd:string. Cardinality: {1}
+            # 18.666666666666668 % obj: xsd:string. Cardinality: {2}
+            # 5.333333333333334 % obj: xsd:string. Cardinality: {3}
+   <http://purl.uniprot.org/core/name>  xsd:integer  ?;
+            # 16.0 % obj: xsd:integer. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/External_Sequence>]  ?
+            # 8.0 % obj: <http://purl.uniprot.org/core/External_Sequence>. Cardinality: {1}
+}
+
+
+weso-s:Thesis_Citation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Thesis_Citation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/author>  xsd:string  +;          # 100.0 %
+            # 97.46835443037975 % obj: xsd:string. Cardinality: {1}
+            # 2.5316455696202533 % obj: xsd:string. Cardinality: {2}
+   <http://purl.uniprot.org/core/date>  xsd:integer  ;          # 100.0 %
+   <http://purl.uniprot.org/core/institution>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/place>  xsd:string  ?;
+            # 82.27848101265823 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/title>  xsd:string  ?
+            # 70.88607594936708 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Sequence_Caution_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Sequence_Caution_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/conflictingSequence>  IRI  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 91.33333333333333 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Patent_Citation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Patent_Citation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/author>  xsd:string  +;          # 100.0 %
+            # 24.62686567164179 % obj: xsd:string. Cardinality: {3}
+            # 17.91044776119403 % obj: xsd:string. Cardinality: {2}
+            # 15.671641791044777 % obj: xsd:string. Cardinality: {4}
+            # 11.940298507462686 % obj: xsd:string. Cardinality: {5}
+            # 10.44776119402985 % obj: xsd:string. Cardinality: {1}
+            # 8.955223880597014 % obj: xsd:string. Cardinality: {7}
+            # 4.477611940298507 % obj: xsd:string. Cardinality: {6}
+            # 1.4925373134328357 % obj: xsd:string. Cardinality: {18}
+            # 1.4925373134328357 % obj: xsd:string. Cardinality: {8}
+            # 0.7462686567164178 % obj: xsd:string. Cardinality: {10}
+            # 0.7462686567164178 % obj: xsd:string. Cardinality: {27}
+            # 0.7462686567164178 % obj: xsd:string. Cardinality: {13}
+            # 0.7462686567164178 % obj: xsd:string. Cardinality: {9}
+   <http://purl.uniprot.org/core/date>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#exactMatch>  IRI  ;          # 100.0 %
+   <http://purl.uniprot.org/core/title>  xsd:string  ?
+            # 96.26865671641791 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Restriction
+{
+   rdf:type  [owl:Restriction]  ;                              # 100.0 %
+   owl:onProperty  @weso-s:ObjectProperty  ;                   # 100.0 %
+   owl:someValuesFrom  IRI                                     # 100.0 %
+}
+
+
+weso-s:Chain_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Chain_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/mass>  xsd:integer  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Nucleotide_Binding_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Nucleotide_Binding_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI  ;                # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 94.66666666666667 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Turn_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Turn_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Mutagenesis_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Mutagenesis_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI  ;                # 100.0 %
+   <http://purl.uniprot.org/core/substitution>  xsd:string  +          # 100.0 %
+            # 96.0 % obj: xsd:string. Cardinality: {1}
+            # 4.0 % obj: xsd:string. Cardinality: {2}
+}
+
+
+weso-s:Erroneous_Gene_Model_Prediction_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Erroneous_Gene_Model_Prediction_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/conflictingSequence>  IRI  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 13.333333333333334 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Ontology
+{
+   rdf:type  [owl:Ontology]  ;                                 # 100.0 %
+   owl:imports  IRI  +;                                        # 100.0 %
+            # 95.83333333333334 % obj: IRI. Cardinality: {1}
+            # 4.166666666666666 % obj: IRI. Cardinality: {5}
+            # 54.166666666666664 % obj: @weso-s:Ontology. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 45.83333333333333 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/ns/shacl#declare>  xsd:string  *;
+            # 41.66666666666667 % obj: xsd:string. Cardinality: +
+            # 29.166666666666668 % obj: xsd:string. Cardinality: {67}
+            # 12.5 % obj: xsd:string. Cardinality: {68}
+   <http://purl.org/dc/terms/title>  xsd:string  ?;
+            # 4.166666666666666 % obj: xsd:string. Cardinality: {1}
+   <https://w3id.org/widoco/vocab#introduction>  xsd:string  ?;
+            # 4.166666666666666 % obj: xsd:string. Cardinality: {1}
+   <http://purl.org/dc/terms/abstract>  xsd:string  ?;
+            # 4.166666666666666 % obj: xsd:string. Cardinality: {1}
+   <http://purl.org/dc/terms/description>  xsd:string  ?;
+            # 4.166666666666666 % obj: xsd:string. Cardinality: {1}
+   <http://purl.org/dc/terms/license>  IRI  ?;
+            # 4.166666666666666 % obj: IRI. Cardinality: {1}
+   <http://purl.org/ontology/bibo/status>  IRI  ?;
+            # 4.166666666666666 % obj: IRI. Cardinality: {1}
+   <http://purl.org/vocab/vann/preferredNamespacePrefix>  xsd:string  ?;
+            # 4.166666666666666 % obj: xsd:string. Cardinality: {1}
+   owl:versionInfo  xsd:integer  ?;
+            # 4.166666666666666 % obj: xsd:integer. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ?;
+            # 4.166666666666666 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  @weso-s:Service  ?
+            # 4.166666666666666 % obj: @weso-s:Service. Cardinality: {1}
+}
+
+
+weso-s:Plasmid
+{
+   rdf:type  [<http://purl.uniprot.org/core/Plasmid>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  +          # 100.0 %
+            # 90.0 % obj: xsd:string. Cardinality: {1}
+            # 10.0 % obj: xsd:string. Cardinality: {2}
+}
+
+
+weso-s:Allergen_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Allergen_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Activity_Regulation_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Activity_Regulation_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/sequence>  IRI  ?
+            # 0.6666666666666667 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:ObjectProperty
+{
+   rdf:type  [owl:ObjectProperty]  ;                           # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  @weso-s:Ontology  ?;
+            # 83.33333333333334 % obj: @weso-s:Ontology. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ?;
+            # 83.33333333333334 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#domain>  IRI  ?;
+            # 58.88888888888889 % obj: IRI. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#range>  IRI  ?;
+            # 57.77777777777777 % obj: IRI. Cardinality: {1}
+            # 1.1111111111111112 % obj: @weso-s:Class. Cardinality: {1}
+            # 1.1111111111111112 % obj: @weso-s:NamedIndividual. Cardinality: {1}
+            # 1.1111111111111112 % obj: @weso-s:Thing. Cardinality: {1}
+            # 1.1111111111111112 % obj: @weso-s:Rank. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 42.22222222222222 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#domain>  xsd:string  *;
+            # 20.0 % obj: xsd:string. Cardinality: {10}
+   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>  IRI  ?;
+            # 8.88888888888889 % obj: IRI. Cardinality: {1}
+            # 6.666666666666667 % obj: @weso-s:ObjectProperty. Cardinality: {1}
+            # 2.2222222222222223 % obj: @weso-s:DatatypeProperty. Cardinality: {1}
+   owl:inverseOf  IRI  ?;
+            # 8.88888888888889 % obj: IRI. Cardinality: {1}
+            # 8.88888888888889 % obj: @weso-s:ObjectProperty. Cardinality: {1}
+            # 1.1111111111111112 % obj: @weso-s:TransitiveProperty. Cardinality: {1}
+   rdf:type  [owl:FunctionalProperty]  ?;
+            # 7.777777777777778 % obj: owl:FunctionalProperty. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#range>  xsd:string  *;
+            # 5.555555555555555 % obj: xsd:string. Cardinality: {10}
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  *;
+            # 3.3333333333333335 % obj: IRI. Cardinality: +
+            # 2.2222222222222223 % obj: IRI. Cardinality: {1}
+            # 1.1111111111111112 % obj: IRI. Cardinality: {2}
+   rdf:type  [owl:TransitiveProperty]  ?;
+            # 1.1111111111111112 % obj: owl:TransitiveProperty. Cardinality: {1}
+   rdf:type  [owl:InverseFunctionalProperty]  ?;
+            # 1.1111111111111112 % obj: owl:InverseFunctionalProperty. Cardinality: {1}
+   rdf:type  [owl:AnnotationProperty]  ?;
+            # 1.1111111111111112 % obj: owl:AnnotationProperty. Cardinality: {1}
+   owl:deprecated  xsd:string  ?
+            # 1.1111111111111112 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Intramembrane_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Intramembrane_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI  ;                # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 82.0 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Unassigned_RNA
+{
+   rdf:type  [<http://purl.uniprot.org/core/Unassigned_RNA>]  ;          # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Genomic_DNA>]  ?;
+            # 0.6666666666666667 % obj: <http://purl.uniprot.org/core/Genomic_DNA>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Genomic_RNA>]  ?
+            # 0.6666666666666667 % obj: <http://purl.uniprot.org/core/Genomic_RNA>. Cardinality: {1}
+}
+
+
+weso-s:Binding_Site_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Binding_Site_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/ligand>  IRI  ;               # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI  ;                # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 18.0 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Disruption_Phenotype_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Disruption_Phenotype_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Book_Citation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Book_Citation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/author>  xsd:string  +;          # 100.0 %
+            # 23.75 % obj: xsd:string. Cardinality: {4}
+            # 23.75 % obj: xsd:string. Cardinality: {2}
+            # 16.25 % obj: xsd:string. Cardinality: {1}
+            # 16.25 % obj: xsd:string. Cardinality: {3}
+            # 11.25 % obj: xsd:string. Cardinality: {5}
+            # 5.0 % obj: xsd:string. Cardinality: {7}
+            # 2.5 % obj: xsd:string. Cardinality: {6}
+            # 1.25 % obj: xsd:string. Cardinality: {8}
+   <http://purl.uniprot.org/core/date>  xsd:integer  ;          # 100.0 %
+   <http://purl.uniprot.org/core/name>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/place>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/title>  xsd:string  ?;
+            # 93.75 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/editor>  xsd:string  *;
+            # 73.75 % obj: xsd:string. Cardinality: +
+            # 21.25 % obj: xsd:string. Cardinality: {3}
+            # 20.0 % obj: xsd:string. Cardinality: {2}
+            # 13.750000000000002 % obj: xsd:string. Cardinality: {1}
+            # 8.75 % obj: xsd:string. Cardinality: {4}
+            # 7.5 % obj: xsd:string. Cardinality: {5}
+            # 1.25 % obj: xsd:string. Cardinality: {7}
+            # 1.25 % obj: xsd:string. Cardinality: {9}
+   <http://purl.uniprot.org/core/publisher>  xsd:string  ?;
+            # 68.75 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/pages>  xsd:string  ?;
+            # 67.5 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/pages>  xsd:integer  ?;
+            # 30.0 % obj: xsd:integer. Cardinality: {1}
+   <http://purl.uniprot.org/core/volume>  xsd:string  ?
+            # 2.5 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Non_Self_Interaction
+{
+   rdf:type  [<http://purl.uniprot.org/core/Interaction>]  ;          # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Non_Self_Interaction>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/experiments>  xsd:integer  ;          # 100.0 %
+   <http://purl.uniprot.org/core/participant>  IRI  {2};          # 100.0 %
+            # 82.0 % obj: @weso-s:Participant. Cardinality: +
+   <http://purl.uniprot.org/core/xeno>  xsd:string             # 100.0 %
+}
+
+
+weso-s:Transit_Peptide_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Transit_Peptide_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Observation_Citation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Observation_Citation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/date>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/author>  xsd:string  *;
+            # 98.0 % obj: xsd:string. Cardinality: +
+            # 76.0 % obj: xsd:string. Cardinality: {1}
+            # 15.333333333333332 % obj: xsd:string. Cardinality: {2}
+            # 4.0 % obj: xsd:string. Cardinality: {3}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {12}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {4}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {9}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {6}
+   <http://purl.uniprot.org/core/title>  xsd:string  ?;
+            # 2.666666666666667 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/group>  xsd:string  ?
+            # 2.0 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Frameshift_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Frameshift_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/conflictingSequence>  IRI  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 2.0 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/sequence>  IRI  ?
+            # 0.6666666666666667 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Transposon
+{
+   rdf:type  [<http://purl.uniprot.org/core/Transposon>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Alternative_Promoter_Usage_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Alternative_Promoter_Usage_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/sequence>  IRI  +;            # 100.0 %
+            # 60.0 % obj: IRI. Cardinality: {2}
+            # 13.333333333333334 % obj: IRI. Cardinality: {3}
+            # 9.333333333333334 % obj: IRI. Cardinality: {4}
+            # 4.0 % obj: IRI. Cardinality: {5}
+            # 3.3333333333333335 % obj: IRI. Cardinality: {7}
+            # 2.666666666666667 % obj: IRI. Cardinality: {6}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {10}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {8}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {15}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {1}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {9}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {11}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {17}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {23}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {29}
+            # 3.3333333333333335 % obj: @weso-s:Unknown_Sequence. Cardinality: +
+            # 1.3333333333333335 % obj: @weso-s:External_Sequence. Cardinality: {4}
+            # 0.6666666666666667 % obj: @weso-s:Simple_Sequence. Cardinality: {1}
+            # 0.6666666666666667 % obj: @weso-s:Modified_Sequence. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Alternative_Splicing_Annotation>]  ?;
+            # 34.66666666666667 % obj: <http://purl.uniprot.org/core/Alternative_Splicing_Annotation>. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 9.333333333333334 % obj: xsd:string. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Alternative_Initiation_Annotation>]  ?
+            # 3.3333333333333335 % obj: <http://purl.uniprot.org/core/Alternative_Initiation_Annotation>. Cardinality: {1}
+}
+
+
+weso-s:Resource
+{
+   rdf:type  [<http://purl.uniprot.org/core/Resource>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  +;          # 100.0 %
+            # 76.66666666666667 % obj: xsd:string. Cardinality: {2}
+            # 23.333333333333332 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/database>  @weso-s:Database  ;          # 100.0 %
+   <http://purl.uniprot.org/core/signatureSequenceMatch>  IRI  *;
+            # 22.666666666666664 % obj: IRI. Cardinality: +
+            # 0.6666666666666667 % obj: IRI. Cardinality: {191504}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {58574}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {108344}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {66161}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {81964}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {192330}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {173916}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {74192}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {31268}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {178866}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {160003}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {14738}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {119679}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {59479}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {3958}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {164868}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {193274}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {188880}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {190884}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {50148}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {31127}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {92675}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {74598}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {71733}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {4746}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {50076}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {5081}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {129627}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {22137}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {138162}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {138636}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {133623}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {104212}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {37644}
+            # 1.3333333333333335 % obj: @weso-s:Region. Cardinality: {1}
+   <http://www.w3.org/2004/02/skos/core#broader>  IRI  ?
+            # 22.666666666666664 % obj: IRI. Cardinality: {1}
+            # 15.333333333333332 % obj: @weso-s:Resource. Cardinality: {1}
+}
+
+
+weso-s:Cluster
+{
+   rdf:type  [<http://purl.uniprot.org/core/Cluster>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/identity>  xsd:integer  ;          # 100.0 %
+   <http://purl.uniprot.org/core/member>  IRI  +;              # 100.0 %
+            # 78.0 % obj: IRI. Cardinality: {1}
+            # 18.0 % obj: IRI. Cardinality: {2}
+            # 2.666666666666667 % obj: IRI. Cardinality: {3}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {5}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {13}
+   <http://purl.uniprot.org/core/modified>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/commonTaxon>  IRI  ?
+            # 99.33333333333333 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Nucleotide_Resource
+{
+   rdf:type  [<http://purl.uniprot.org/core/Nucleotide_Resource>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  ;          # 100.0 %
+   <http://purl.uniprot.org/core/created>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/database>  @weso-s:Database  ;          # 100.0 %
+   <http://purl.uniprot.org/core/locatedOn>  IRI  ;            # 100.0 %
+   <http://purl.uniprot.org/core/modified>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/organism>  IRI  ;             # 100.0 %
+   <http://purl.uniprot.org/core/structuredName>  IRI  ;          # 100.0 %
+   <http://purl.uniprot.org/core/version>  xsd:integer  ;          # 100.0 %
+   <http://purl.uniprot.org/core/reportedVersion>  xsd:integer  ;          # 100.0 %
+   <http://purl.uniprot.org/core/encodedBy>  IRI  ?;
+            # 96.66666666666667 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/proteome>  IRI  ?
+            # 78.0 % obj: IRI. Cardinality: {1}
+            # 62.66666666666667 % obj: @weso-s:Proteome_Component. Cardinality: {1}
+}
+
+
+weso-s:Pathway_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Pathway_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI            # 100.0 %
+}
+
+
+weso-s:Gene
+{
+   rdf:type  [<http://purl.uniprot.org/core/Gene>]  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Temperature_Dependence_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Temperature_Dependence_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Similarity_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Similarity_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Graph
+{
+   rdf:type  [<http://www.w3.org/ns/sparql-service-description#Graph>]  ;          # 100.0 %
+   <http://ldf.fi/void-ext#distinctIRIReferenceObjects>  xsd:integer  ;          # 100.0 %
+   <http://ldf.fi/void-ext#distinctIRIReferenceSubjects>  xsd:integer  ;          # 100.0 %
+   <http://ldf.fi/void-ext#distinctLiterals>  xsd:integer  ;          # 100.0 %
+   <http://rdfs.org/ns/void#distinctObjects>  xsd:integer  +;          # 100.0 %
+            # 95.65217391304348 % obj: xsd:integer. Cardinality: {1}
+            # 4.3478260869565215 % obj: xsd:integer. Cardinality: {2}
+   <http://rdfs.org/ns/void#distinctSubjects>  xsd:integer  +;          # 100.0 %
+            # 95.65217391304348 % obj: xsd:integer. Cardinality: {1}
+            # 4.3478260869565215 % obj: xsd:integer. Cardinality: {2}
+   <http://rdfs.org/ns/void#triples>  xsd:integer  +;          # 100.0 %
+            # 95.65217391304348 % obj: xsd:integer. Cardinality: {1}
+            # 4.3478260869565215 % obj: xsd:integer. Cardinality: {2}
+   <http://purl.org/dc/terms/license>  IRI  ?;
+            # 95.65217391304348 % obj: IRI. Cardinality: {1}
+   <http://rdfs.org/ns/void#propertyPartition>  IRI  *;
+            # 95.65217391304348 % obj: IRI. Cardinality: +
+            # 8.695652173913043 % obj: IRI. Cardinality: {11}
+            # 8.695652173913043 % obj: IRI. Cardinality: {13}
+            # 8.695652173913043 % obj: IRI. Cardinality: {17}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {10}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {67}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {39}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {12}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {29}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {14}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {8}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {33}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {5}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {21}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {35}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {19}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {18}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {7}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {20}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {122}
+   <http://rdfs.org/ns/void#classPartition>  IRI  *;
+            # 95.65217391304348 % obj: IRI. Cardinality: +
+            # 26.08695652173913 % obj: IRI. Cardinality: {3}
+            # 21.73913043478261 % obj: IRI. Cardinality: {2}
+            # 13.043478260869565 % obj: IRI. Cardinality: {4}
+            # 13.043478260869565 % obj: IRI. Cardinality: {6}
+            # 8.695652173913043 % obj: IRI. Cardinality: {5}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {19}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {11}
+            # 4.3478260869565215 % obj: IRI. Cardinality: {120}
+   <http://rdfs.org/ns/void#classes>  xsd:integer  ?;
+            # 95.65217391304348 % obj: xsd:integer. Cardinality: {1}
+   <http://ldf.fi/void-ext#distinctBlankNodeSubjects>  xsd:integer  *;
+            # 17.391304347826086 % obj: xsd:integer. Cardinality: +
+            # 13.043478260869565 % obj: xsd:integer. Cardinality: {1}
+            # 4.3478260869565215 % obj: xsd:integer. Cardinality: {2}
+   <http://purl.org/dc/terms/title>  xsd:string  ?;
+            # 4.3478260869565215 % obj: xsd:string. Cardinality: {1}
+   <http://purl.org/dc/terms/issued>  xsd:string  ?
+            # 4.3478260869565215 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Disease_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Disease_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/disease>  IRI  ?
+            # 84.0 % obj: IRI. Cardinality: {1}
+            # 3.3333333333333335 % obj: @weso-s:Disease. Cardinality: {1}
+}
+
+
+weso-s:Active_Site_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Active_Site_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI  ;                # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 64.0 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:PTM_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/PTM_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Strain
+{
+   rdf:type  [<http://purl.uniprot.org/core/Strain>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/name>  xsd:string  *;
+            # 98.0 % obj: xsd:string. Cardinality: +
+            # 45.33333333333333 % obj: xsd:string. Cardinality: {1}
+            # 36.0 % obj: xsd:string. Cardinality: {2}
+            # 8.666666666666668 % obj: xsd:string. Cardinality: {3}
+            # 4.666666666666667 % obj: xsd:string. Cardinality: {4}
+            # 2.666666666666667 % obj: xsd:string. Cardinality: {5}
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {6}
+   <http://purl.uniprot.org/core/name>  xsd:integer  ?;
+            # 3.3333333333333335 % obj: xsd:integer. Cardinality: {1}
+   <http://purl.uniprot.org/core/name>  xsd:float  ?
+            # 0.6666666666666667 % obj: xsd:float. Cardinality: {1}
+}
+
+
+weso-s:Transcript_Resource
+{
+   rdf:type  [<http://purl.uniprot.org/core/Transcript_Resource>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/database>  IRI  ;             # 100.0 %
+   <http://purl.uniprot.org/core/transcribedFrom>  IRI  ;          # 100.0 %
+            # 57.333333333333336 % obj: @weso-s:Transcript_Resource. Cardinality: {1}
+   <http://purl.uniprot.org/core/translatedTo>  @weso-s:Transcript_Resource  ;          # 100.0 %
+   <http://purl.uniprot.org/core/created>  xsd:string  ?;
+            # 96.66666666666667 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/modified>  xsd:string  ?;
+            # 96.66666666666667 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/organism>  IRI  ?;
+            # 96.66666666666667 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/version>  xsd:integer  ?;
+            # 96.66666666666667 % obj: xsd:integer. Cardinality: {1}
+   <http://purl.uniprot.org/core/proteome>  IRI  ?
+            # 96.66666666666667 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Participant
+{
+   rdf:type  [<http://purl.uniprot.org/core/Participant>]  ;          # 100.0 %
+   owl:sameAs  IRI  ;                                          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ?
+            # 98.66666666666667 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Natural_Variant_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Natural_Variant_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI  ;                # 100.0 %
+   <http://purl.uniprot.org/core/substitution>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 87.33333333333333 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Image
+{
+   rdf:type  [<http://xmlns.com/foaf/0.1/Image>]  ;            # 100.0 %
+   <http://purl.uniprot.org/core/height>  xsd:integer  ;          # 100.0 %
+   <http://purl.uniprot.org/core/width>  xsd:integer            # 100.0 %
+}
+
+
+weso-s:Structured_Name
+{
+   rdf:type  [<http://purl.uniprot.org/core/Structured_Name>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/structuredNameType>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Genomic_DNA
+{
+   rdf:type  [<http://purl.uniprot.org/core/Genomic_DNA>]  ;          # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Unassigned_DNA>]  ?;
+            # 6.0 % obj: <http://purl.uniprot.org/core/Unassigned_DNA>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Unassigned_RNA>]  ?;
+            # 0.6666666666666667 % obj: <http://purl.uniprot.org/core/Unassigned_RNA>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Other_DNA>]  ?
+            # 0.6666666666666667 % obj: <http://purl.uniprot.org/core/Other_DNA>. Cardinality: {1}
+}
+
+
+weso-s:Subunit_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Subunit_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Redox_Potential_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Redox_Potential_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Sequence_Conflict_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Sequence_Conflict_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/conflictingSequence>  IRI  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI  ;                # 100.0 %
+   <http://purl.uniprot.org/core/substitution>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Function_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Function_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Part
+{
+   rdf:type  [<http://purl.uniprot.org/core/Part>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/recommendedName>  IRI  ;          # 100.0 %
+   <http://purl.uniprot.org/core/enzyme>  IRI  *;
+            # 47.333333333333336 % obj: IRI. Cardinality: +
+            # 46.666666666666664 % obj: IRI. Cardinality: {1}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {2}
+   <http://purl.uniprot.org/core/alternativeName>  IRI  *
+            # 26.0 % obj: IRI. Cardinality: +
+            # 21.333333333333336 % obj: IRI. Cardinality: {1}
+            # 2.666666666666667 % obj: IRI. Cardinality: {3}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {2}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {5}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {6}
+}
+
+
+weso-s:Erroneous_Termination_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Erroneous_Termination_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/conflictingSequence>  IRI            # 100.0 %
+}
+
+
+weso-s:Cross-link_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Cross-link_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI  +                # 100.0 %
+            # 88.66666666666667 % obj: IRI. Cardinality: {1}
+            # 11.333333333333332 % obj: IRI. Cardinality: {2}
+}
+
+
+weso-s:Absorption_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Absorption_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/maximum>  xsd:integer  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 35.338345864661655 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/certain>  xsd:string  ?
+            # 15.037593984962406 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Peptide_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Peptide_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Non-terminal_Residue_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Non-terminal_Residue_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:NamedIndividual
+{
+   rdf:type  [owl:NamedIndividual]  ;                          # 100.0 %
+   rdf:type  [owl:Thing]  ;                                    # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  +;          # 100.0 %
+            # 98.66666666666667 % obj: xsd:string. Cardinality: {1}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {2}
+   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  @weso-s:Ontology  ?;
+            # 98.66666666666667 % obj: @weso-s:Ontology. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Rank>]  ?;
+            # 57.333333333333336 % obj: <http://purl.uniprot.org/core/Rank>. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 16.0 % obj: xsd:string. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Organelle>]  ?;
+            # 12.0 % obj: <http://purl.uniprot.org/core/Organelle>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Structure_Determination_Method>]  ?;
+            # 9.333333333333334 % obj: <http://purl.uniprot.org/core/Structure_Determination_Method>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Mass_Measurement_Method>]  ?;
+            # 9.333333333333334 % obj: <http://purl.uniprot.org/core/Mass_Measurement_Method>. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  ?;
+            # 9.333333333333334 % obj: IRI. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Protein_Existence>]  ?;
+            # 6.666666666666667 % obj: <http://purl.uniprot.org/core/Protein_Existence>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Status>]  ?;
+            # 5.333333333333334 % obj: <http://purl.uniprot.org/core/Status>. Cardinality: {1}
+   rdf:type  [owl:Class]  ?
+            # 1.3333333333333335 % obj: owl:Class. Cardinality: {1}
+}
+
+
+weso-s:Thing
+{
+   rdf:type  [owl:NamedIndividual]  ;                          # 100.0 %
+   rdf:type  [owl:Thing]  ;                                    # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  +;          # 100.0 %
+            # 98.66666666666667 % obj: xsd:string. Cardinality: {1}
+            # 1.3333333333333335 % obj: xsd:string. Cardinality: {2}
+   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  @weso-s:Ontology  ?;
+            # 98.66666666666667 % obj: @weso-s:Ontology. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Rank>]  ?;
+            # 57.333333333333336 % obj: <http://purl.uniprot.org/core/Rank>. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 16.0 % obj: xsd:string. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Organelle>]  ?;
+            # 12.0 % obj: <http://purl.uniprot.org/core/Organelle>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Structure_Determination_Method>]  ?;
+            # 9.333333333333334 % obj: <http://purl.uniprot.org/core/Structure_Determination_Method>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Mass_Measurement_Method>]  ?;
+            # 9.333333333333334 % obj: <http://purl.uniprot.org/core/Mass_Measurement_Method>. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  ?;
+            # 9.333333333333334 % obj: IRI. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Protein_Existence>]  ?;
+            # 6.666666666666667 % obj: <http://purl.uniprot.org/core/Protein_Existence>. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Status>]  ?;
+            # 5.333333333333334 % obj: <http://purl.uniprot.org/core/Status>. Cardinality: {1}
+   rdf:type  [owl:Class]  ?
+            # 1.3333333333333335 % obj: owl:Class. Cardinality: {1}
+}
+
+
+weso-s:Rank
+{
+   rdf:type  [owl:NamedIndividual]  ;                          # 100.0 %
+   rdf:type  [owl:Thing]  ;                                    # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Rank>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  +;          # 100.0 %
+            # 97.67441860465115 % obj: xsd:string. Cardinality: {1}
+            # 2.3255813953488373 % obj: xsd:string. Cardinality: {2}
+   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  @weso-s:Ontology  ?;
+            # 97.67441860465115 % obj: @weso-s:Ontology. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 6.976744186046512 % obj: xsd:string. Cardinality: {1}
+   rdf:type  [owl:Class]  ?
+            # 2.3255813953488373 % obj: owl:Class. Cardinality: {1}
+}
+
+
+weso-s:Member_Of_Redudant_Proteome
+{
+   rdf:type  [<http://purl.uniprot.org/core/Member_Of_Redudant_Proteome>]  ;          # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Protein>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/created>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/mnemonic>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/modified>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/obsolete>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/reviewed>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/version>  xsd:integer  ;          # 100.0 %
+   <http://purl.uniprot.org/core/replacedBy>  IRI  ?
+            # 2.666666666666667 % obj: IRI. Cardinality: {1}
+            # 0.6666666666666667 % obj: @weso-s:Protein. Cardinality: {1}
+}
+
+
+weso-s:Protein
+{
+   rdf:type  [<http://purl.uniprot.org/core/Protein>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/created>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/mnemonic>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/modified>  xsd:string  +;          # 100.0 %
+            # 96.66666666666667 % obj: xsd:string. Cardinality: {1}
+            # 3.3333333333333335 % obj: xsd:string. Cardinality: {2}
+   <http://purl.uniprot.org/core/reviewed>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/version>  xsd:integer  +;          # 100.0 %
+            # 90.66666666666666 % obj: xsd:integer. Cardinality: {1}
+            # 9.333333333333334 % obj: xsd:integer. Cardinality: {2}
+   <http://purl.uniprot.org/core/obsolete>  xsd:string  ?;
+            # 90.66666666666666 % obj: xsd:string. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Member_Of_Redudant_Proteome>]  ?;
+            # 81.33333333333333 % obj: <http://purl.uniprot.org/core/Member_Of_Redudant_Proteome>. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ?;
+            # 9.333333333333334 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  *;
+            # 9.333333333333334 % obj: IRI. Cardinality: +
+            # 3.3333333333333335 % obj: IRI. Cardinality: {12}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {11}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {3}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {6}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {16}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {15}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {17}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {4}
+            # 4.0 % obj: @weso-s:Resource. Cardinality: {1}
+   <http://purl.uniprot.org/core/attribution>  IRI  *;
+            # 9.333333333333334 % obj: IRI. Cardinality: +
+            # 2.666666666666667 % obj: IRI. Cardinality: {5}
+            # 2.0 % obj: IRI. Cardinality: {2}
+            # 2.0 % obj: IRI. Cardinality: {10}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {6}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {4}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {9}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {8}
+   <http://purl.uniprot.org/core/citation>  IRI  *;
+            # 9.333333333333334 % obj: IRI. Cardinality: +
+            # 8.666666666666668 % obj: IRI. Cardinality: {1}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {2}
+   <http://purl.uniprot.org/core/encodedBy>  IRI  *;
+            # 9.333333333333334 % obj: IRI. Cardinality: {2}
+   <http://purl.uniprot.org/core/existence>  IRI  ?;
+            # 9.333333333333334 % obj: IRI. Cardinality: {1}
+            # 9.333333333333334 % obj: @weso-s:NamedIndividual. Cardinality: {1}
+            # 9.333333333333334 % obj: @weso-s:Thing. Cardinality: {1}
+            # 9.333333333333334 % obj: @weso-s:Protein_Existence. Cardinality: {1}
+   <http://purl.uniprot.org/core/organism>  IRI  ?;
+            # 9.333333333333334 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/sequence>  IRI  ?;
+            # 9.333333333333334 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/structuredName>  IRI  ?;
+            # 9.333333333333334 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/reportedVersion>  xsd:integer  ?;
+            # 9.333333333333334 % obj: xsd:integer. Cardinality: {1}
+   <http://purl.uniprot.org/core/proteome>  IRI  *;
+            # 8.666666666666668 % obj: IRI. Cardinality: +
+            # 8.0 % obj: IRI. Cardinality: {1}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {2}
+            # 7.333333333333333 % obj: @weso-s:Proteome_Component. Cardinality: +
+   <http://purl.uniprot.org/core/annotation>  IRI  *;
+            # 7.333333333333333 % obj: IRI. Cardinality: +
+            # 2.0 % obj: IRI. Cardinality: {5}
+            # 2.0 % obj: IRI. Cardinality: {3}
+            # 2.0 % obj: IRI. Cardinality: {2}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {4}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/submittedName>  IRI  ?;
+            # 6.666666666666667 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/classifiedWith>  IRI  *;
+            # 6.666666666666667 % obj: IRI. Cardinality: +
+            # 3.3333333333333335 % obj: IRI. Cardinality: {3}
+            # 2.0 % obj: IRI. Cardinality: {1}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {5}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {9}
+            # 2.666666666666667 % obj: @weso-s:Concept. Cardinality: +
+   <http://purl.uniprot.org/core/representativeFor>  IRI  *;
+            # 4.0 % obj: IRI. Cardinality: +
+            # 2.666666666666667 % obj: IRI. Cardinality: {1}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {2}
+   <http://purl.uniprot.org/core/seedFor>  IRI  *;
+            # 4.0 % obj: IRI. Cardinality: +
+            # 2.666666666666667 % obj: IRI. Cardinality: {1}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {2}
+   <http://purl.uniprot.org/core/recommendedName>  IRI  ?;
+            # 2.666666666666667 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/replacedBy>  IRI  ?;
+            # 2.0 % obj: IRI. Cardinality: {1}
+            # 1.3333333333333335 % obj: @weso-s:Protein. Cardinality: {1}
+   <http://purl.uniprot.org/core/alternativeName>  IRI  ?;
+            # 0.6666666666666667 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/replaces>  @weso-s:Protein  ?
+            # 0.6666666666666667 % obj: @weso-s:Protein. Cardinality: {1}
+}
+
+
+weso-s:Motif_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Motif_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Other_RNA
+{
+   rdf:type  [<http://purl.uniprot.org/core/Other_RNA>]  ;          # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Genomic_RNA>]  ?
+            # 4.666666666666667 % obj: <http://purl.uniprot.org/core/Genomic_RNA>. Cardinality: {1}
+}
+
+
+weso-s:Journal_Citation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Citation>]  ;          # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Journal_Citation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/author>  xsd:string  +;          # 100.0 %
+            # 23.655913978494624 % obj: xsd:string. Cardinality: {4}
+            # 20.43010752688172 % obj: xsd:string. Cardinality: {5}
+            # 16.129032258064516 % obj: xsd:string. Cardinality: {6}
+            # 16.129032258064516 % obj: xsd:string. Cardinality: {3}
+            # 8.60215053763441 % obj: xsd:string. Cardinality: {7}
+            # 6.451612903225806 % obj: xsd:string. Cardinality: {2}
+            # 5.376344086021505 % obj: xsd:string. Cardinality: {8}
+            # 2.1505376344086025 % obj: xsd:string. Cardinality: {9}
+            # 1.0752688172043012 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/date>  xsd:integer  ;          # 100.0 %
+   <http://purl.uniprot.org/core/name>  xsd:string  +;          # 100.0 %
+            # 94.6236559139785 % obj: xsd:string. Cardinality: {1}
+            # 5.376344086021505 % obj: xsd:string. Cardinality: {2}
+   <http://purl.uniprot.org/core/title>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/volume>  xsd:integer  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#exactMatch>  IRI  ;          # 100.0 %
+   <http://xmlns.com/foaf/0.1/primaryTopicOf>  IRI  ;          # 100.0 %
+   <http://purl.uniprot.org/core/pages>  xsd:string  ?;
+            # 98.9247311827957 % obj: xsd:string. Cardinality: {1}
+   <http://purl.org/dc/terms/identifier>  xsd:string  *;
+            # 97.84946236559139 % obj: xsd:string. Cardinality: +
+            # 95.6989247311828 % obj: xsd:string. Cardinality: {1}
+            # 2.1505376344086025 % obj: xsd:string. Cardinality: {2}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 94.6236559139785 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  IRI  ?;
+            # 2.1505376344086025 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/erratum>  IRI  ?
+            # 1.0752688172043012 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Glycosylation_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Glycosylation_Annotation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI                   # 100.0 %
+}
+
+
+weso-s:Zinc_Finger_Annotation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Zinc_Finger_Annotation>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/range>  IRI  ;                # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 98.66666666666667 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:External_Sequence
+{
+   rdf:type  [<http://purl.uniprot.org/core/External_Sequence>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/name>  xsd:string  *;
+            # 95.33333333333334 % obj: xsd:string. Cardinality: +
+            # 72.66666666666667 % obj: xsd:string. Cardinality: {1}
+            # 20.0 % obj: xsd:string. Cardinality: {2}
+            # 2.666666666666667 % obj: xsd:string. Cardinality: {3}
+   <http://purl.uniprot.org/core/created>  xsd:string  ?;
+            # 92.66666666666666 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/modified>  xsd:string  *;
+            # 92.66666666666666 % obj: xsd:string. Cardinality: +
+            # 80.0 % obj: xsd:string. Cardinality: {2}
+            # 12.666666666666668 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/organism>  IRI  ?;
+            # 92.66666666666666 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/reviewed>  xsd:string  ?;
+            # 92.66666666666666 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/structuredName>  IRI  ?;
+            # 92.66666666666666 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/version>  xsd:integer  *;
+            # 92.66666666666666 % obj: xsd:integer. Cardinality: +
+            # 70.66666666666667 % obj: xsd:integer. Cardinality: {1}
+            # 22.0 % obj: xsd:integer. Cardinality: {2}
+   rdf:value  xsd:string  ?;
+            # 92.66666666666666 % obj: xsd:string. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Simple_Sequence>]  ?;
+            # 80.0 % obj: <http://purl.uniprot.org/core/Simple_Sequence>. Cardinality: {1}
+   <http://purl.uniprot.org/core/mass>  xsd:integer  ?;
+            # 80.0 % obj: xsd:integer. Cardinality: {1}
+   <http://purl.uniprot.org/core/md5Checksum>  xsd:string  ?;
+            # 80.0 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/encodedBy>  IRI  ?;
+            # 77.33333333333333 % obj: IRI. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Modified_Sequence>]  ?;
+            # 12.666666666666668 % obj: <http://purl.uniprot.org/core/Modified_Sequence>. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ?;
+            # 12.666666666666668 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/basedOn>  IRI  ?;
+            # 12.666666666666668 % obj: IRI. Cardinality: {1}
+            # 1.3333333333333335 % obj: @weso-s:External_Sequence. Cardinality: {1}
+            # 1.3333333333333335 % obj: @weso-s:Simple_Sequence. Cardinality: {1}
+   <http://purl.uniprot.org/core/modification>  IRI  *;
+            # 12.666666666666668 % obj: IRI. Cardinality: +
+            # 9.333333333333334 % obj: IRI. Cardinality: {1}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {3}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {2}
+            # 0.6666666666666667 % obj: IRI. Cardinality: {4}
+   <http://purl.uniprot.org/core/name>  xsd:integer  ?;
+            # 12.0 % obj: xsd:integer. Cardinality: {1}
+   <http://purl.uniprot.org/core/precursor>  xsd:string  ?;
+            # 8.0 % obj: xsd:string. Cardinality: {1}
+   rdf:type  [<http://purl.uniprot.org/core/Unknown_Sequence>]  ?;
+            # 7.333333333333333 % obj: <http://purl.uniprot.org/core/Unknown_Sequence>. Cardinality: {1}
+   <http://purl.uniprot.org/core/representativeFor>  IRI  *;
+            # 7.333333333333333 % obj: IRI. Cardinality: +
+            # 4.0 % obj: IRI. Cardinality: {3}
+            # 2.0 % obj: IRI. Cardinality: {2}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/seedFor>  IRI  *;
+            # 6.666666666666667 % obj: IRI. Cardinality: +
+            # 4.0 % obj: IRI. Cardinality: {1}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {3}
+            # 1.3333333333333335 % obj: IRI. Cardinality: {2}
+   <http://purl.uniprot.org/core/fragment>  xsd:string  ?
+            # 0.6666666666666667 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Orientation
+{
+   rdf:type  [<http://purl.uniprot.org/core/Orientation>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#subClassOf>  IRI  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/alias>  xsd:string            # 100.0 %
+}
+
+
+weso-s:Organelle
+{
+   rdf:type  [owl:NamedIndividual]  ;                          # 100.0 %
+   rdf:type  [owl:Thing]  ;                                    # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Organelle>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  @weso-s:Ontology  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string            # 100.0 %
+}
+
+
+weso-s:List
+{
+   rdf:type  [rdf:List]  ;                                     # 100.0 %
+   rdf:rest  xsd:string  ?;
+            # 60.0 % obj: xsd:string. Cardinality: {1}
+   rdf:rest  IRI  ?;
+            # 40.0 % obj: IRI. Cardinality: {1}
+   rdf:first  xsd:float  ?;
+            # 40.0 % obj: xsd:float. Cardinality: {1}
+   rdf:first  xsd:string  ?;
+            # 40.0 % obj: xsd:string. Cardinality: {1}
+   rdf:first  xsd:integer  ?
+            # 20.0 % obj: xsd:integer. Cardinality: {1}
+}
+
+
+weso-s:AllDifferent
+{
+   rdf:type  [owl:AllDifferent]  ;                             # 100.0 %
+   owl:distinctMembers  xsd:string                             # 100.0 %
+}
+
+
+weso-s:Sequence
+{
+   rdf:type  [<http://purl.uniprot.org/core/Sequence>]  ;          # 100.0 %
+   <http://purl.uniprot.org/core/md5Checksum>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/sequenceFor>  IRI  +;          # 100.0 %
+            # 25.31645569620253 % obj: IRI. Cardinality: {9}
+            # 16.455696202531644 % obj: IRI. Cardinality: {8}
+            # 13.924050632911392 % obj: IRI. Cardinality: {10}
+            # 8.860759493670885 % obj: IRI. Cardinality: {7}
+            # 7.59493670886076 % obj: IRI. Cardinality: {1}
+            # 5.063291139240507 % obj: IRI. Cardinality: {3}
+            # 3.79746835443038 % obj: IRI. Cardinality: {6}
+            # 3.79746835443038 % obj: IRI. Cardinality: {13}
+            # 2.5316455696202533 % obj: IRI. Cardinality: {11}
+            # 2.5316455696202533 % obj: IRI. Cardinality: {20}
+            # 2.5316455696202533 % obj: IRI. Cardinality: {4}
+            # 1.2658227848101267 % obj: IRI. Cardinality: {15}
+            # 1.2658227848101267 % obj: IRI. Cardinality: {5}
+            # 1.2658227848101267 % obj: IRI. Cardinality: {21}
+            # 1.2658227848101267 % obj: IRI. Cardinality: {18}
+            # 1.2658227848101267 % obj: IRI. Cardinality: {2}
+            # 1.2658227848101267 % obj: IRI. Cardinality: {17}
+            # 79.74683544303798 % obj: @weso-s:Nucleotide_Resource. Cardinality: +
+   rdf:value  xsd:string  ;                                    # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ?;
+            # 91.13924050632912 % obj: xsd:string. Cardinality: {1}
+   <http://purl.uniprot.org/core/length>  xsd:integer  ?;
+            # 91.13924050632912 % obj: xsd:integer. Cardinality: {1}
+   <http://purl.uniprot.org/core/memberOf>  IRI  *;
+            # 91.13924050632912 % obj: IRI. Cardinality: +
+            # 88.60759493670885 % obj: IRI. Cardinality: {3}
+            # 2.5316455696202533 % obj: IRI. Cardinality: {2}
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  *;
+            # 84.81012658227847 % obj: IRI. Cardinality: +
+            # 15.18987341772152 % obj: IRI. Cardinality: {3}
+            # 15.18987341772152 % obj: IRI. Cardinality: {2}
+            # 11.39240506329114 % obj: IRI. Cardinality: {6}
+            # 8.860759493670885 % obj: IRI. Cardinality: {4}
+            # 7.59493670886076 % obj: IRI. Cardinality: {7}
+            # 5.063291139240507 % obj: IRI. Cardinality: {13}
+            # 5.063291139240507 % obj: IRI. Cardinality: {5}
+            # 3.79746835443038 % obj: IRI. Cardinality: {9}
+            # 2.5316455696202533 % obj: IRI. Cardinality: {8}
+            # 2.5316455696202533 % obj: IRI. Cardinality: {11}
+            # 1.2658227848101267 % obj: IRI. Cardinality: {18}
+            # 1.2658227848101267 % obj: IRI. Cardinality: {12}
+            # 1.2658227848101267 % obj: IRI. Cardinality: {22}
+            # 1.2658227848101267 % obj: IRI. Cardinality: {10}
+            # 1.2658227848101267 % obj: IRI. Cardinality: {15}
+            # 1.2658227848101267 % obj: IRI. Cardinality: {1}
+            # 10.126582278481013 % obj: @weso-s:Resource. Cardinality: +
+   <http://purl.uniprot.org/core/organism>  IRI  ?;
+            # 2.5316455696202533 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/representativeFor>  IRI  ?;
+            # 2.5316455696202533 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/seedFor>  IRI  ?
+            # 2.5316455696202533 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:AnnotationProperty
+{
+   rdf:type  [owl:AnnotationProperty]  ;                       # 100.0 %
+   rdf:type  [owl:ObjectProperty]  ?
+            # 7.6923076923076925 % obj: owl:ObjectProperty. Cardinality: {1}
+}
+
+
+weso-s:Topology
+{
+   rdf:type  [<http://purl.uniprot.org/core/Topology>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#subClassOf>  IRI  +;          # 100.0 %
+            # 45.45454545454545 % obj: IRI. Cardinality: {2}
+            # 36.36363636363637 % obj: IRI. Cardinality: {3}
+            # 18.181818181818183 % obj: IRI. Cardinality: {1}
+            # 54.54545454545454 % obj: @weso-s:Topology. Cardinality: {1}
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ;          # 100.0 %
+   <http://purl.uniprot.org/core/alias>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#altLabel>  xsd:string  *;
+            # 72.72727272727273 % obj: xsd:string. Cardinality: +
+            # 45.45454545454545 % obj: xsd:string. Cardinality: {5}
+            # 18.181818181818183 % obj: xsd:string. Cardinality: {2}
+            # 9.090909090909092 % obj: xsd:string. Cardinality: {6}
+   owl:sameAs  IRI  ?;
+            # 36.36363636363637 % obj: IRI. Cardinality: {1}
+   <http://purl.uniprot.org/core/relatedLocation>  @weso-s:Topology  ?
+            # 18.181818181818183 % obj: @weso-s:Topology. Cardinality: {1}
+}
+
+
+weso-s:Datatype
+{
+   rdf:type  [<http://www.w3.org/2000/01/rdf-schema#Datatype>]  ;          # 100.0 %
+   owl:oneOf  xsd:string  ?
+            # 83.33333333333334 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Service
+{
+   rdf:type  [<http://www.w3.org/ns/sparql-service-description#Service>]  ;          # 100.0 %
+   <http://www.w3.org/ns/sparql-service-description#endpoint>  IRI  ;          # 100.0 %
+            # 50.0 % obj: @weso-s:Service. Cardinality: {1}
+   <http://www.w3.org/ns/sparql-service-description#feature>  IRI  {2};          # 100.0 %
+   <http://www.w3.org/ns/sparql-service-description#resultFormat>  IRI  +;          # 100.0 %
+            # 50.0 % obj: IRI. Cardinality: {7}
+            # 50.0 % obj: IRI. Cardinality: {8}
+   <http://www.w3.org/ns/sparql-service-description#supportedLanguage>  IRI  ;          # 100.0 %
+   <http://www.openlinksw.com/schemas/virtrdf#dialect>  xsd:integer  ?;
+            # 50.0 % obj: xsd:integer. Cardinality: {1}
+   <http://www.openlinksw.com/schemas/virtrdf#dialect-exceptions>  xsd:integer  ?;
+            # 50.0 % obj: xsd:integer. Cardinality: {1}
+   <http://www.w3.org/ns/sparql-service-description#defaultDataset>  @weso-s:Dataset  ?;
+            # 50.0 % obj: @weso-s:Dataset. Cardinality: {1}
+   <http://www.w3.org/ns/sparql-service-description#url>  IRI  ?
+            # 50.0 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:Structure_Determination_Method
+{
+   rdf:type  [owl:NamedIndividual]  ;                          # 100.0 %
+   rdf:type  [owl:Thing]  ;                                    # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Structure_Determination_Method>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  @weso-s:Ontology  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  ?;
+            # 71.42857142857143 % obj: IRI. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 42.857142857142854 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Protein_Existence
+{
+   rdf:type  [owl:NamedIndividual]  ;                          # 100.0 %
+   rdf:type  [owl:Thing]  ;                                    # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Protein_Existence>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  @weso-s:Ontology  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 40.0 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:Class
+{
+   rdf:type  [<http://www.w3.org/2000/01/rdf-schema#Class>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 75.0 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ?;
+            # 75.0 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#subClassOf>  @weso-s:Class  ?
+            # 60.0 % obj: @weso-s:Class. Cardinality: {1}
+}
+
+
+weso-s:Mass_Measurement_Method
+{
+   rdf:type  [owl:NamedIndividual]  ;                          # 100.0 %
+   rdf:type  [owl:Thing]  ;                                    # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Mass_Measurement_Method>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  @weso-s:Ontology  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?;
+            # 28.57142857142857 % obj: xsd:string. Cardinality: {1}
+   <http://www.w3.org/2000/01/rdf-schema#seeAlso>  IRI  ?
+            # 28.57142857142857 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:TransitiveProperty
+{
+   rdf:type  [owl:TransitiveProperty]  ;                       # 100.0 %
+   rdf:type  [owl:ObjectProperty]  ;                           # 100.0 %
+   owl:inverseOf  @weso-s:ObjectProperty                       # 100.0 %
+}
+
+
+weso-s:Status
+{
+   rdf:type  [owl:NamedIndividual]  ;                          # 100.0 %
+   rdf:type  [owl:Thing]  ;                                    # 100.0 %
+   rdf:type  [<http://purl.uniprot.org/core/Status>]  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  @weso-s:Ontology  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#comment>  xsd:string  ?
+            # 50.0 % obj: xsd:string. Cardinality: {1}
+}
+
+
+weso-s:InverseFunctionalProperty
+{
+   rdf:type  [owl:InverseFunctionalProperty]  ;                # 100.0 %
+   rdf:type  [owl:FunctionalProperty]  ;                       # 100.0 %
+   rdf:type  [owl:ObjectProperty]  ;                           # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#domain>  xsd:string  {10};          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  @weso-s:Ontology  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  ;          # 100.0 %
+   <http://www.w3.org/2000/01/rdf-schema#range>  IRI            # 100.0 %
+}
+
+
+weso-s:Dataset
+{
+   rdf:type  [<http://www.w3.org/ns/sparql-service-description#Dataset>]  ;          # 100.0 %
+   <http://www.w3.org/ns/sparql-service-description#defaultGraph>  @weso-s:Graph  ;          # 100.0 %
+   <http://www.w3.org/ns/sparql-service-description#namedGraph>  IRI  {22};          # 100.0 %
+   <http://purl.org/dc/terms/issued>  xsd:string  ;            # 100.0 %
+   <http://purl.org/pav/version>  xsd:integer                  # 100.0 %
+}
+
+
+
